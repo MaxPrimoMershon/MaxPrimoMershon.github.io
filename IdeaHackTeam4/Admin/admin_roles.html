@@ -3,7 +3,7 @@
 <html>
   
   <head>
-    <title>Admin Add Event</title>
+    <title>Admin Roles</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -27,8 +27,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="#">Events</a>
+            <li>
+              <a href="admin_events.html">Events</a>
             </li>
             <li>
               <a href="admin_startups.html">Startups</a>
@@ -36,12 +36,12 @@
             <li>
               <a href="admin_students.html">Students</a>
             </li>
-            <li>
-              <a href="admin_roles.html">Roles</a>              
+            <li class="active">
+              <a href="#">Roles</a>              
             </li>
             <li>
               <a href="admin_reports.html">Reports</a>
-            </li>          
+            </li>
           </ul>
         </div>
         <!--/.navbar-collapse -->
@@ -51,17 +51,28 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-lg-4">
-          <h2>Add Event</h2>
-          <h3>Details</h3>
-          <form>
-            <input type="text" class="form-control" placeholder="Title">
-            <input type="text" class="form-control" placeholder="Location">
-            <a class="btn btn-primary">Add</a><a class="btn btn-primary">Cancel</a>
-          </form>
+        <div class="col-lg-12">
+          <h2>Roles</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Startup</th>
+                <th>Skills</th>
+                <th>Matches</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Front end dev</td>
+                <td>Startup Institute</td>
+                <td>HTML, CSS, Javascript</td>
+                <td>Pablo Escobar</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <hr>
       <footer>
         <p>&copy; Company 2013</p>
       </footer>
