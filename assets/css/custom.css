@@ -1,0 +1,65 @@
+.passion-img{
+	width: 25%;
+}
+
+#container-downshift{
+	margin-top: 50px;
+}
+
+#summary-buffer{
+	margin-top:20px;
+}
+
+#background-picture{
+	background-size: cover;
+	background-image: url(../img/nepal_himalayas_me.jpg);
+	height:600px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#divider {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#experience{
+	  background-color: #f5f5f5;
+}
+
+#passions{
+	  background-color: #f5f5f5;
+}
+
+#accenture-img{
+	width:60%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#twodegrees-img{
+	width:30%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#maritz-img{
+	width:60%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#uofi-img{
+	width:25%;
+	margin-top: 10px;
+	margin-bottom: 10px;}
+
+#sic-img{
+	width:60%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#footer{
+	margin-top: 10px;
+}
