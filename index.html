@@ -8,6 +8,8 @@
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,13 +18,15 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+      
   </head>
-  <body>
+    
+  <body data-spy="scroll" data-target="#navbar-scroll">
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-example" role="navigation">
-      <div class="container-fluid">
+      <div class="container-fluid" id="navbar-scroll">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">Max Primo Mershon</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -32,8 +36,9 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+        <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
+            <li><a href="#summary">Summary</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#passions">Passions</a></li>        
@@ -42,20 +47,20 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://drive.google.com/file/d/0B8twAiT8iwUZWkE5OXNQQ282Unc/edit?usp=sharing">Resume</a></li>          
             <li><a href="http://www.maxprimomershon.com/blog">Blog</a></li>
-            <li><a href="http://www.linkedin.com/pub/max-mershon/36/720/4a7/"><img class="img-noborder" src="assets/simple-icons-master/icons/linkedin/linkedin-16.png"></a></li>
-            <li><a href="https://github.com/MaxPrimoMershon"><img class="img-noborder" src="assets/simple-icons-master/icons/github/github-16.png"></a></li>
+            <li><a href="http://www.linkedin.com/pub/max-mershon/36/720/4a7/"><img class="img-noborder" src="assets/img/linkedin/linkedin-16.png"></a></li>
+            <li><a href="https://github.com/MaxPrimoMershon"><img class="img-noborder" src="assets/img/github/github-16.png"></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     
-    <div class="container-fluid" id="container-downshift">
+    <div class="container-fluid" id="shift-down">
       
-      <div class="row" id="background-picture">
+      <div class="row" id="summary">
         <div class="col-sm-12">
-            <div id="summary-buffer">
+            <div>
               <h1 class="text-center">Max Primo Mershon</h1>
-              <h4 class="text-center">Aspiring front end developer who's curious about the world around us</h4>
+              <h4 class="text-center">Aspiring front end developer curious about the world around us</h4>
             </div>
         </div>
       </div>
@@ -66,7 +71,7 @@
         <div class="col-md-12">
           <h1 class="text-center">Experience</h1>
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 fade-it-experience">
               <img src="assets/img/accenture.jpg" class="center-block img-thumbnail" id="accenture-img" alt="accenture logo">
               <div class="caption">
                 <div class="panel panel-default">
@@ -78,7 +83,7 @@
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 fade-it-experience">
               <img src="assets/img/2degrees.jpg" class="center-block img-thumbnail" id="twodegrees-img" alt="two degrees logo">
               <div class="caption">
                 <div class="panel panel-default">
@@ -90,7 +95,7 @@
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 fade-it-experience">
               <img src="assets/img/maritz.jpg" class="center-block img-thumbnail" id="maritz-img" alt="maritz logo">
               <div class="caption">
                 <div class="panel panel-default">
@@ -111,7 +116,7 @@
         <div class="col-md-12">
           <h1 class="text-center">Education</h1>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 fade-it-education">
               <img src="assets/img/sic.png" class="center-block img-thumbnail" id="sic-img" alt="startup institute logo">
               <div class="caption">
                 <div class="panel panel-default">
@@ -126,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 fade-it-education">
               <img src="assets/img/uofi.jpg" class="center-block img-thumbnail" id="uofi-img" alt="uofi logo">
               <div class="caption">
                 <div class="panel panel-default">
@@ -179,10 +184,23 @@
       </footer>
 
     </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+    
+   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/collapse.js"></script>
+    <script type="text/javascript" src="assets/js/scrollspy.js"></script>
+    <script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+  	<script type="text/javascript" src="assets/js/jquery.superscrollorama.js"></script>
+	<script>
+		$(document).ready(function() {
+			//initialize superscrollorama
+            var controller = $.superscrollorama();
+			//insert addTween method to fade in elements
+			controller.addTween('.fade-it-experience', TweenMax.from( $('.fade-it-experience'),2, {css:{opacity: 0}}),0,-50);
+			controller.addTween('.fade-it-education', TweenMax.from( $('.fade-it-education'),2, {css:{opacity: 0}}),0,-50);
+            //controller.addTween('.fly-it-right', TweenMax.from( $('.fly-it-right'), .5, {css:{right:'1000px'}, ease:Quad.easeInOut}),0,-150);
+			//controller.addTween('.fly-it-left', TweenMax.from( $('.fly-it-left'), .5, {css:{left:'1000px'}, ease:Quad.easeInOut}),0,-150);
+        });
+	</script>
+      
+    </body>
 </html>
