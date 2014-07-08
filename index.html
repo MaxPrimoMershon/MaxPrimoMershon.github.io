@@ -21,7 +21,7 @@
       
   </head>
     
-  <body data-spy="scroll" data-target="#navbar-scroll">
+  <body data-spy="scroll" data-target="#navbar-scroll" data-offset="55">
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-example" role="navigation">
       <div class="container-fluid" id="navbar-scroll">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,9 +65,9 @@
         </div>
       </div>
 
-      <hr class="featurette-divider" id="divider">
+      <hr class="featurette-divider divider" id="experience">
 
-      <div class="row" id="experience">
+      <div class="row" id="experience-background">
         <div class="col-md-12">
           <h1 class="text-center">Experience</h1>
           <div class="row">
@@ -110,9 +110,9 @@
         </div>
       </div>
 
-      <hr class="featurette-divider" id="divider">
+      <hr class="featurette-divider divider" id="education">
       
-      <div class="row" id="education">
+      <div class="row">
         <div class="col-md-12">
           <h1 class="text-center">Education</h1>
           <div class="row">
@@ -150,9 +150,9 @@
         </div>
       </div>
 
-      <hr class="featurette-divider" id="divider">
+      <hr class="featurette-divider divider"  id="passions">
       
-      <div class="row" id="passions">
+      <div class="row" id="passions-background">
         <div class="col-md-12">
           <h1 class="text-center">Passions</h1>
           <div class="row">
@@ -175,7 +175,7 @@
         </div>
       </div>          
     
-      <hr class="featurette-divider" id="divider">
+      <hr class="featurette-divider divider">
 
       <footer id="footer">
         <p class="pull-right"><a href="#top">Back to top</a></p>
@@ -196,10 +196,31 @@
             var controller = $.superscrollorama();
 			//insert addTween method to fade in elements
 			controller.addTween('.fade-it-experience', TweenMax.from( $('.fade-it-experience'),2, {css:{opacity: 0}}),0,-50);
-			controller.addTween('.fade-it-education', TweenMax.from( $('.fade-it-education'),2, {css:{opacity: 0}}),0,-50);
+			controller.addTween('.fade-it-education', TweenMax.from( $('.fade-it-education'),2, {css:{opacity: 0}}),0,-100);
             //controller.addTween('.fly-it-right', TweenMax.from( $('.fly-it-right'), .5, {css:{right:'1000px'}, ease:Quad.easeInOut}),0,-150);
 			//controller.addTween('.fly-it-left', TweenMax.from( $('.fly-it-left'), .5, {css:{left:'1000px'}, ease:Quad.easeInOut}),0,-150);
         });
+
+        // The function actually applying the offset
+        function offsetAnchor() {
+            // This if statement is optional. It is just making sure that
+            // there is a valid anchor to offset from.
+            if($(location.hash).length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+
+        // This will capture hash changes while you are on the same page
+        $(window).on("hashchange", function () {
+            offsetAnchor();
+        });
+
+        // This is here so that when you enter the page with a hash,
+        // it can provide the offset in that case too. Having a timeout
+        // seems necessary to allow the browser to jump to the anchor first.
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
 	</script>
       
     </body>
