@@ -1,3 +1,12 @@
+#panel-edits{
+    margin-top: 20px;
+    background-color: rgba(245,245,245,.5);
+}
+
+#panelbody-edits{
+    padding: 0px;
+}
+
 #shift-down{
     margin-top: 50px;
 }
