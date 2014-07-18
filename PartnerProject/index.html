@@ -11,8 +11,9 @@
     <title>Partner Project</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrapValidator.min.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -53,53 +54,97 @@
         <div class="row well">
             <h1>Hello, world!</h1>
             <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            
-            
-            
+                                    
             <!-- Button trigger modal -->
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-              Sign Up
-            </button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#signupModal">Sign Up</button>
 
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
-                  </div>
-                  <div class="modal-body">
-                        <form class="form-horizontal" role="form">
-                          <div class="form-group">
-                            <label for="startupname" class="col-sm-4 control-label">Startup Name:</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="startupname" placeholder="Startup Name">
-                            </div>
-                          </div>
-                            <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
-                            <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
-                            <div class="col-sm-8">
-                              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="col-sm-offset-4 col-sm-8">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <a class="btn btn-success" href="register.html" role="button">Sign In</a>
-                            </div>
-                          </div>
-                        </form>
-                  </div>
+            <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3 class="modal-title text-center">Sign Up</h3>
+                        </div>
 
+                        <div class="modal-body">
+                            <!-- The form is placed inside the body of modal -->                                                                                                                                                                                                                                
+                            <form id="signupForm" method="post" class="form-horizontal bv-form" 
+                                  data-bv-message="This value is not valid" 
+                                  data-bv-feedbackicons-valid="glyphicon glyphicon-ok" 
+                                  data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" 
+                                  data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">                                                          
+                                
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Startup Name</label>
+                                    <div class="col-lg-5">
+                                        <input type="text" class="form-control" name="startupName" 
+                                               required />
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group has-feedback has-error">
+                                    <label class="col-lg-3 control-label">Email address</label>
+                                    <div class="col-lg-5">
+                                        <input class="form-control" name="email" type="email" 
+                                               data-bv-emailaddress-message="The input is not a valid email address" 
+                                               data-bv-field="email"
+                                               required />
+                                        <i class="form-control-feedback glyphicon glyphicon-remove" 
+                                               data-bv-icon-for="email" style="display: block;"></i>
+                                        <small class="help-block" 
+                                               data-bv-validator="emailAddress" 
+                                               data-bv-for="email" 
+                                               data-bv-result="INVALID" style="display: block;">The input is not a valid email address</small>
+                                    </div>
+                                </div>
+
+                                <div class="form-group has-feedback has-error">
+                                    <label class="col-lg-3 control-label">Password</label>
+                                    <div class="col-lg-5">
+                                        <input type="password" class="form-control" name="password" 
+                                               required 
+                                               data-bv-identical="true" 
+                                               data-bv-identical-field="confirmPassword" 
+                                               data-bv-identical-message="The password and its confirm are not the same" 
+                                               data-bv-field="password">
+                                        <i class="form-control-feedback" data-bv-icon-for="password" style="display: none;"></i>
+                                        <small class="help-block" 
+                                                data-bv-validator="identical" 
+                                                data-bv-for="password" 
+                                                data-bv-result="NOT_VALIDATED" 
+                                                style="display: none;">The password and its confirm are not the same</small>
+                                    </div>
+                                </div>
+
+                                <div class="form-group has-feedback">
+                                    <label class="col-lg-3 control-label">Retype password</label>
+                                    <div class="col-lg-5">
+                                        <input type="password" class="form-control" name="confirmPassword" 
+                                               required 
+                                               data-bv-identical="true" 
+                                               data-bv-identical-field="password" 
+                                               data-bv-identical-message="The password and its confirm are not the same" 
+                                               data-bv-field="confirmPassword">
+                                        <i class="form-control-feedback" data-bv-icon-for="confirmPassword" style="display: none;"></i>
+                                        <small class="help-block" 
+                                               data-bv-validator="identical" 
+                                               data-bv-for="confirmPassword" 
+                                               data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-lg-9 col-lg-offset-3">
+                                        <button type="submit" class="btn btn-primary">Sign up</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             
             
@@ -142,8 +187,13 @@
     ================================================== -->
     <!--Placed at the end of the document so the pages load faster-->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrapValidator.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#signupForm').bootstrapValidator();
+        });
+    </script>
 
 </body>
 

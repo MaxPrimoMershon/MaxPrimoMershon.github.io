@@ -11,7 +11,8 @@
     <title>Register</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrapValidator.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,128 +43,106 @@
 
         <!--Registration Form-->
         <div class="row">
-            <h1>Register</h1>
-            <form class="form-horizontal" role="form">
-                <h3>Basic Info</h3>
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="elevatorpitch">Elevator Pitch:</label>
+            <h1>Basic Information</h1>
+            
+                <form id="registrationForm" method="post" class="form-horizontal bv-form" 
+                      data-bv-message="This value is not valid" 
+                      data-bv-feedbackicons-valid="glyphicon glyphicon-ok" 
+                      data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" 
+                      data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">                                                          
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Elevator Pitch:</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="elevatorPitch" required />
+                        </div>
                     </div>
-                    <div class="col-sm-10">
-                        <textarea class="form-control" rows="3" id="elevatorpitch" placeholder="..."></textarea>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Problem:</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="problem" required />
+                        </div>
                     </div>
-                </div>                            
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="problem">Problem:</label>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Solution:</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="solution" required />
+                        </div>
                     </div>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="problem" placeholder="...">
+                    
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Industry:</label>
+                        <div class="col-lg-5">
+                            <select class="form-control" name="industry" required>
+                              <option value="">-- Select an industry --</option>
+                              <option value="edtech">Ed Tech</option>
+                              <option value="fintech">Fin Tech</option>
+                              <option value="healthcare">Healthcare</option>
+                            </select>
+                        </div>
+                    </div> 
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"># Employees:</label>
+                        <div class="col-lg-5">
+                            <select class="form-control" name="employees" required>
+                              <option value="">-- Select a value --</option>
+                              <option value="0-10">0-10</option>
+                              <option value="11-50">11-50</option>
+                              <option value="50-100">50-100</option>
+                              <option value="100+">100+</option>
+                            </select>
+                        </div>
                     </div>
-                </div>                            
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="solution">Solution:</label>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Location:</label>
+                        <div class="col-lg-4">
+                            <select class="form-control" name="country" required>
+                                <option value="">-- Select a country --</option>
+                                <option value="fr">France</option>
+                                <option value="de">Germany</option>
+                                <option value="it">Italy</option>
+                                <option value="jp">Japan</option>
+                                <option value="ru">Russia</option>
+                                <option value="gb">United Kingdom</option>
+                                <option value="us">United State</option>
+                            </select>                            
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="city" placeholder="City" required />
+                        </div>                        
+                    </div>                                         
+                    
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Founder(s):</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" name="textbox[]" placeholder="First Name" required />
+                            <input class="form-control" type="text" name="textbox[]" placeholder="Last Name" required />
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="button" class="btn btn-default btn-sm addButton" data-template="textbox">Add</button>
+                        </div>
                     </div>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="solution" placeholder="...">
+                    
+                    <div class="form-group hide" id="textboxTemplate">
+                        <div class="col-lg-offset-3 col-lg-5">
+                            <input class="form-control" type="text" placeholder="First Name" required />
+                            <input class="form-control" type="text" placeholder="Last Name" required />
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="button" class="btn btn-default btn-sm removeButton">Remove</button>
+                        </div>
+                    </div>                    
+                    
+                    <div class="form-group">
+                        <div class="col-lg-9 col-lg-offset-3">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
                     </div>
-                </div>                
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="industry">Industry:</label>
-                    </div>
-                    <div class="col-sm-10">
-                        <select class="form-control" id="industry">
-                          <option>Ed Tech</option>
-                          <option>Fin Tech</option>
-                          <option>Healthcare</option>
-                        </select>
-                    </div>
-                </div>                                
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="employees">Employees:</label>
-                    </div>
-                    <div class="col-sm-10">
-                        <select class="form-control" id="employees">
-                          <option>0-10</option>
-                          <option>11-50</option>
-                          <option>50-100</option>
-                          <option>100+</option>
-                        </select>
-                    </div>
-                </div>                
-                 <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="country">Location:</label>
-                    </div>
-                    <div class="col-sm-10">
-                        <select class="form-control" id="country">
-                          <option>U.S.</option>
-                          <option>Israel</option>
-                          <option>Germany</option>
-                        </select>
-                    </div>
-                </div>                               
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <input type="text" class="form-control" id="city" placeholder="City">
-                    </div>
-                </div>                                
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="exampleInputEmail1">Founder(s):</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Middle Name">
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
-                    </div>
-                    <div class="col-sm-1">
-                        <button type="submit" class="btn">Add</button>
-                    </div>    
-                </div>                
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="exampleInputEmail1">Advisor(s):</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Middle Name">
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
-                    </div>
-                    <div class="col-sm-1">
-                        <button type="submit" class="btn">Add</button>
-                    </div>    
-                </div> 
-                <div class="form-group">
-                    <div class="col-sm-2">
-                        <label class="control-label" for="exampleInputEmail1">Investor(s):</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Middle Name">
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
-                    </div>
-                    <div class="col-sm-1">
-                        <button type="submit" class="btn">Add</button>
-                    </div>    
-                </div>                 
-                <a class="btn btn-success" href="profile.html" role="button">Sign In</a>
-            </form>
+
+                </form>
 
         </div>
 
@@ -181,14 +160,45 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Placed at the end of the document so the pages load faster
+<!--    Placed at the end of the document so the pages load faster-->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrapValidator.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#registrationForm').bootstrapValidator();
+            
+            $('.addButton').on('click', function() {
+                var index = $(this).data('index');
+                if (!index) {
+                    index = 1;
+                    $(this).data('index', 1);
+                }
+                index++;
+                $(this).data('index', index);
 
+                var template     = $(this).attr('data-template'),
+                    $templateEle = $('#' + template + 'Template'),
+                    $row         = $templateEle.clone().removeAttr('id').insertBefore($templateEle).removeClass('hide'),
+                    $el          = $row.find('input').eq(0).attr('name', template + '[]');
+                $('#defaultForm').bootstrapValidator('addField', $el);
 
+                // Set random value for checkbox and textbox
+                if ('checkbox' == $el.attr('type') || 'radio' == $el.attr('type')) {
+                    $el.val('Choice #' + index)
+                       .parent().find('span.lbl').html('Choice #' + index);
+                } else {
+                    $el.attr('placeholder', 'Name');
+                }
 
-
+                $row.on('click', '.removeButton', function(e) {
+                    $('#defaultForm').bootstrapValidator('removeField', $el);
+                    $row.remove();
+                });
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
