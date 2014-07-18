@@ -218,7 +218,7 @@
             //controller.addTween('.fly-it-right', TweenMax.from( $('.fly-it-right'), .5, {css:{right:'1000px'}, ease:Quad.easeInOut}),0,-150);
 			//controller.addTween('.fly-it-left', TweenMax.from( $('.fly-it-left'), .5, {css:{left:'1000px'}, ease:Quad.easeInOut}),0,-150);
         });
-
+        
         // The function actually applying the offset
         function offsetAnchor() {
             // This if statement is optional. It is just making sure that
@@ -239,6 +239,8 @@
         window.setTimeout(function() {
             offsetAnchor();
         }, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+        
+
 	</script>
      
     </body>
