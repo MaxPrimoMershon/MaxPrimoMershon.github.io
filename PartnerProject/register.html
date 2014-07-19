@@ -44,19 +44,23 @@
         <!--Registration Form-->
         <div class="row">
             <h1>Basic Information</h1>
-            
+            <p><em>*Required Fields</em></p>
+
                 <form id="registrationForm" method="post" class="form-horizontal bv-form" 
                       data-bv-message="This value is not valid" 
                       data-bv-feedbackicons-valid="glyphicon glyphicon-ok" 
                       data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" 
                       data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">                                                          
 
+                    <!--Elevator pitch-->
                     <div class="form-group">
-                        <label class="col-lg-3 control-label">Elevator Pitch:</label>
+                        <label class="col-lg-3 control-label">Elevator Pitch:*</label>
                         <div class="col-lg-5">
-                            <input type="text" class="form-control" name="elevatorPitch" required />
+                            <textarea class="form-control" rows="3" name="elevatorPitch" required></textarea>
                         </div>
                     </div>
+                    
+                    <!--Problem-->
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Problem:</label>
                         <div class="col-lg-5">
@@ -64,6 +68,7 @@
                         </div>
                     </div>
 
+                    <!--Solution-->
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Solution:</label>
                         <div class="col-lg-5">
@@ -71,6 +76,7 @@
                         </div>
                     </div>
                     
+                    <!--Industry-->
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Industry:</label>
                         <div class="col-lg-5">
@@ -83,6 +89,7 @@
                         </div>
                     </div> 
 
+                    <!--Employees-->
                     <div class="form-group">
                         <label class="col-lg-3 control-label"># Employees:</label>
                         <div class="col-lg-5">
@@ -96,6 +103,7 @@
                         </div>
                     </div>
 
+                    <!--Location-->
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Location:</label>
                         <div class="col-lg-4">
@@ -114,39 +122,107 @@
                             <input type="text" class="form-control" name="city" placeholder="City" required />
                         </div>                        
                     </div>                                         
-                    
-                    <div class="form-group">
 
-                        
-        <div class="control-group" id="fields">
-            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
-            <div class="controls"> 
-                <form role="form" autocomplete="off">
-                    <div class="entry input-group col-xs-3">
-                        <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
-                    	<span class="input-group-btn">
-                            <button class="btn btn-success btn-add" type="button">
-                                <span class="glyphicon glyphicon-plus"></span>
-                            </button>
-                        </span>
+                    <!--Founders-->
+                    <div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Founder(s):*</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" required />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" required />
+                            </div>                        
+                        </div>                  
+
+                        <div class="form-group">
+                            <div class="col-lg-4 col-lg-offset-3">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div>                      
+
+                        <div class="form-group">
+                            <div class="col-lg-4 col-lg-offset-3">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div> 
                     </div>
-                </form>
-            <br>
-            <small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another form field :)</small>
-            </div>
-        </div>
-                        
-                        
-                        
+
+                    <!--Advisors-->
+                    <div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Advisor(s):</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div>                  
+
+                        <div class="form-group">
+                            <div class="col-lg-4 col-lg-offset-3">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div>                      
+
+                        <div class="form-group">
+                            <div class="col-lg-4 col-lg-offset-3">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div> 
                     </div>
                     
+                    <!--Investors-->
+                    <div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Investor(s):</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                         
+                        </div>                  
+
+                        <div class="form-group">
+                            <div class="col-lg-4 col-lg-offset-3">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div>                      
+
+                        <div class="form-group">
+                            <div class="col-lg-4 col-lg-offset-3">
+                                <input type="text" class="form-control" name="city" placeholder="First Name" />
+                            </div> 
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
+                            </div>                        
+                        </div> 
+                    </div>
                     
+                    <!--Submit Form-->
                     <div class="form-group">
                         <div class="col-lg-9 col-lg-offset-3">
-                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
-
+                    
                 </form>
 
         </div>
@@ -170,34 +246,10 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrapValidator.min.js"></script>
     <script>
-
-        $(function()
-            {
-                $(document).on('click', '.btn-add', function(e)
-                {
-                    e.preventDefault();
-
-                    var controlForm = $('.controls form:first'),
-                        currentEntry = $(this).parents('.entry:first'),
-                        newEntry = $(currentEntry.clone()).appendTo(controlForm);
-
-                    newEntry.find('input').val('');
-                    controlForm.find('.entry:not(:last) .btn-add')
-                        .removeClass('btn-add').addClass('btn-remove')
-                        .removeClass('btn-success').addClass('btn-danger')
-                        .html('<span class="glyphicon glyphicon-minus"></span>');
-                }).on('click', '.btn-remove', function(e)
-                {
-                    $(this).parents('.entry:first').remove();
-
-                    e.preventDefault();
-                    return false;
-                });
-            });
-
-        
+        $(document).ready(function() {
+            $('#registrationForm').bootstrapValidator();        
+        });
     </script>
-    
 </body>
 
 </html>

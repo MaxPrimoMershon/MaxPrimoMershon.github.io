@@ -96,93 +96,131 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="thumbnail">
-                    <h2 class="text-center">Overview</h2>
-                    <form class="form-horizontal" role="form">
-                        <h3>Basic Info</h3>
-                        <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="elevatorpitch">Elevator Pitch:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="elevatorpitch" disabled>blah blah blah blah blah blah</textarea>
-                            </div>  
-                        </div>                            
-                        <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="problem">Problem:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="problem" placeholder="blah blah blah" disabled>
-                            </div>
-                        </div>                            
-                        <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="solution">Solution:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="solution" placeholder="blah blah blah" disabled>
-                            </div>
-                        </div>                
-                        <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="industry">Industry:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <select class="form-control" id="industry" disabled>
-                                  <option>Ed Tech</option>
-                                  <option>Fin Tech</option>
-                                  <option>Healthcare</option>
-                                </select>
-                            </div>
-                        </div>                                
-                        <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="employees">Employees:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <select class="form-control" id="employees" disabled>
-                                  <option>0-10</option>
-                                  <option>11-50</option>
-                                  <option>50-100</option>
-                                  <option>100+</option>
-                                </select>
-                            </div>
-                        </div>                
-                         <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="country">Location:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <select class="form-control" id="country" disabled>
-                                  <option>U.S.</option>
-                                  <option>Israel</option>
-                                  <option>Germany</option>
-                                </select>
-                            </div>
-                        </div>                               
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <input type="text" class="form-control" id="city" placeholder="blah blah blah" disabled>
-                            </div>
-                        </div>                                
-                        <div class="form-group">
-                            <div class="col-sm-2">
-                                <label class="control-label" for="founders">Founder(s):</label>
-                            </div>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" id="founders" placeholder="blah" disabled>
-                            </div>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" id="founders" placeholder="blah" disabled>
-                            </div>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" id="founders" placeholder="blah" disabled>
-                            </div>
-   
-                        </div>                
+                    <h1>Basic Information</h1>
 
-                        <button class="btn">Edit</button>
+                    <form id="registrationForm" method="post" class="form-horizontal bv-form" 
+                          data-bv-message="This value is not valid" 
+                          data-bv-feedbackicons-valid="glyphicon glyphicon-ok" 
+                          data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" 
+                          data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">                                                          
+
+                        <!--Elevator pitch-->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Elevator Pitch:</label>
+                            <div class="col-lg-5">
+                                <p class="form-control-static">Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah</p>
+                            </div>
+                        </div>
+
+                        <!--Problem-->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Problem:</label>
+                            <div class="col-lg-5">
+                                <p class="form-control-static">Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah</p>
+                            </div>
+                        </div>
+
+                        <!--Solution-->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Solution:</label>
+                            <div class="col-lg-5">
+                                <p class="form-control-static">Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah</p>
+                            </div>
+                        </div>
+
+                        <!--Industry-->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Industry:</label>
+                            <div class="col-lg-5">
+                                <p class="form-control-static">Blah blah</p>
+                            </div>
+                        </div> 
+
+                        <!--Employees-->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label"># Employees:</label>
+                            <div class="col-lg-5">
+                                <p class="form-control-static">Blah blah</p>
+                            </div>
+                        </div>
+
+                        <!--Location-->
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Location:</label>
+                            <div class="col-lg-4">
+                                <p class="form-control-static">Blah blah</p>                           
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="form-control-static">Blah blah</p>
+                            </div>                        
+                        </div>                                         
+
+                        <!--Founders-->
+                        <div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Founder(s):</label>
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div> 
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>                        
+                            </div>                  
+
+                            <div class="form-group">
+                                <div class="col-lg-4 col-lg-offset-3">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div> 
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>                        
+                            </div>                      
+
+                            <div class="form-group">
+                                <div class="col-lg-4 col-lg-offset-3">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div> 
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>                        
+                            </div> 
+                        </div>
+
+                        <!--Advisors-->
+                        <div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Advisor(s):</label>
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div> 
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>                        
+                            </div>                  
+                        </div>
+
+                        <!--Investors-->
+                        <div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Investor(s):</label>
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">none</p>
+                                </div> 
+                                <div class="col-lg-4">
+                                </div>                         
+                            </div>                  
+                        </div>
+
+                        <!--Submit Form-->
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary">Edit</button>
+                            </div>
+                        </div>
+
                     </form>
+
+
                 </div>
             </div>            
         </div>
