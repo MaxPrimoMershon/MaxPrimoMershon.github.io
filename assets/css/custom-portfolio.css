@@ -1,5 +1,5 @@
 #panel-edits{
-    margin-top: 20px;
+    margin: 20px auto auto auto;
     background-color: rgba(245,245,245,.5);
 }
 
@@ -14,9 +14,14 @@
 	width: 25%;
 }
 
+#profilePic{
+    margin-top: 50px;
+    width: 25%;
+}
+
 #summary{
 	background-size: cover;
-	background-image: url(../img/nepal_himalayas_me.JPG);
+	background-image: url(../img/nepalHimalayas.JPG);
     background-attachment: fixed;
 	height:600px;
 	margin-bottom: 0px;
@@ -29,11 +34,15 @@
 }
 
 #experience-background{
-	  background-color: #f5f5f5;
+    background-color: rgba(68,103,160,1);
+}
+
+#education-background{
+    background-color: rgba(165,171,178,1);
 }
 
 #passions-background{
-	  background-color: #f5f5f5;
+    background-color: rgba(112,105,100,1);
 }
 
 #accenture-img{

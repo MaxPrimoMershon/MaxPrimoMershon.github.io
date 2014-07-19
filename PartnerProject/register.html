@@ -116,25 +116,30 @@
                     </div>                                         
                     
                     <div class="form-group">
-                        <label class="col-lg-3 control-label">Founder(s):</label>
-                        <div class="col-lg-5">
-                            <input class="form-control" type="text" name="textbox[]" placeholder="First Name" required />
-                            <input class="form-control" type="text" name="textbox[]" placeholder="Last Name" required />
-                        </div>
-                        <div class="col-lg-4">
-                            <button type="button" class="btn btn-default btn-sm addButton" data-template="textbox">Add</button>
-                        </div>
+
+                        
+        <div class="control-group" id="fields">
+            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
+            <div class="controls"> 
+                <form role="form" autocomplete="off">
+                    <div class="entry input-group col-xs-3">
+                        <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
+                    	<span class="input-group-btn">
+                            <button class="btn btn-success btn-add" type="button">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            <br>
+            <small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another form field :)</small>
+            </div>
+        </div>
+                        
+                        
+                        
                     </div>
                     
-                    <div class="form-group hide" id="textboxTemplate">
-                        <div class="col-lg-offset-3 col-lg-5">
-                            <input class="form-control" type="text" placeholder="First Name" required />
-                            <input class="form-control" type="text" placeholder="Last Name" required />
-                        </div>
-                        <div class="col-lg-4">
-                            <button type="button" class="btn btn-default btn-sm removeButton">Remove</button>
-                        </div>
-                    </div>                    
                     
                     <div class="form-group">
                         <div class="col-lg-9 col-lg-offset-3">
@@ -165,38 +170,32 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrapValidator.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#registrationForm').bootstrapValidator();
-            
-            $('.addButton').on('click', function() {
-                var index = $(this).data('index');
-                if (!index) {
-                    index = 1;
-                    $(this).data('index', 1);
-                }
-                index++;
-                $(this).data('index', index);
 
-                var template     = $(this).attr('data-template'),
-                    $templateEle = $('#' + template + 'Template'),
-                    $row         = $templateEle.clone().removeAttr('id').insertBefore($templateEle).removeClass('hide'),
-                    $el          = $row.find('input').eq(0).attr('name', template + '[]');
-                $('#defaultForm').bootstrapValidator('addField', $el);
+        $(function()
+            {
+                $(document).on('click', '.btn-add', function(e)
+                {
+                    e.preventDefault();
 
-                // Set random value for checkbox and textbox
-                if ('checkbox' == $el.attr('type') || 'radio' == $el.attr('type')) {
-                    $el.val('Choice #' + index)
-                       .parent().find('span.lbl').html('Choice #' + index);
-                } else {
-                    $el.attr('placeholder', 'Name');
-                }
+                    var controlForm = $('.controls form:first'),
+                        currentEntry = $(this).parents('.entry:first'),
+                        newEntry = $(currentEntry.clone()).appendTo(controlForm);
 
-                $row.on('click', '.removeButton', function(e) {
-                    $('#defaultForm').bootstrapValidator('removeField', $el);
-                    $row.remove();
+                    newEntry.find('input').val('');
+                    controlForm.find('.entry:not(:last) .btn-add')
+                        .removeClass('btn-add').addClass('btn-remove')
+                        .removeClass('btn-success').addClass('btn-danger')
+                        .html('<span class="glyphicon glyphicon-minus"></span>');
+                }).on('click', '.btn-remove', function(e)
+                {
+                    $(this).parents('.entry:first').remove();
+
+                    e.preventDefault();
+                    return false;
                 });
             });
-        });
+
+        
     </script>
     
 </body>
