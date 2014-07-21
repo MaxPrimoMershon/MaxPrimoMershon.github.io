@@ -1,48 +1,61 @@
-#panel-edits{
-    margin: 20px auto auto auto;
-    background-color: rgba(245,245,245,.5);
+body{
+    font-family: Comic Sans MS, cursive;
 }
 
-#panelbody-edits{
-    padding: 0px;
+.container {
+  overflow: hidden; 
+} 
+
+#sidenav{
+    margin-bottom: -5000px; /* any large number will do */
+    padding-top: 20px;
+    padding-bottom: 5000px; 
+    background-color: rgb(134, 134, 134);
+    position: fixed;
+    display: block;
 }
 
-#shift-down{
-    margin-top: 50px;
-}
-.passion-img{
-	width: 25%;
+#sidenav li{
+    list-style: none;
+    margin: 20px auto;
 }
 
-#profilePic{
-    margin-top: 50px;
-    width: 25%;
+#sidenav li a{
+    color: black;
 }
 
-#summary{
+#connect li{
+    list-style: none;
+    margin: auto;
+}
+
+
+#intro{
 	background-size: cover;
 	background-image: url(../img/nepalHimalayas.JPG);
     background-attachment: fixed;
-	height:600px;
+	height:650px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
 
-.divider {
-	margin-top: 0px;
-	margin-bottom: 0px;
+#quote{
+    margin: 60px auto auto auto;
+    background-color: rgba(245,245,245,.5);
 }
 
-#experience-background{
-    background-color: rgba(68,103,160,1);
+
+#projects{
 }
 
-#education-background{
-    background-color: rgba(165,171,178,1);
+
+#skills{
+    padding-bottom: 20px;
 }
 
-#passions-background{
-    background-color: rgba(112,105,100,1);
+
+#experience{
+    background-color: rgb(200, 200, 198);
 }
 
 #accenture-img{
@@ -63,6 +76,10 @@
 	margin-bottom: 10px;
 }
 
+
+#education{
+}
+
 #uofi-img{
 	width:25%;
 	margin-top: 10px;
@@ -74,6 +91,16 @@
 	margin-bottom: 10px;
 }
 
-#footer{
-	margin-top: 10px;
+
+#passions{
+    background-color: rgb(200, 200, 198);
+}
+
+.passion-img{
+	width: 25%;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 10px;
 }
