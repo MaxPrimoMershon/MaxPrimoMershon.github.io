@@ -2,6 +2,21 @@ body{
     font-family: Comic Sans MS, cursive;
 }
 
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 20px;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Sidenav */
 
 #sidenav{
@@ -15,7 +30,7 @@ body{
 }
 
 #social-icons{
-    width: 90px;
+    width: 120px;
     margin: auto;
 }
 
@@ -52,7 +67,7 @@ body{
 }
 
 #intro a i{
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left:45%;
     color: rgba(16,16,16,.5);
 }
@@ -123,12 +138,11 @@ body{
 
 /*Passions*/
 
-#passions{
+#creations{
     background-color: rgb(200, 200, 198);
 }
 
-#passions img{
-	width: 25%;
+#creations img{
     margin-bottom: 20px;
 }
 
