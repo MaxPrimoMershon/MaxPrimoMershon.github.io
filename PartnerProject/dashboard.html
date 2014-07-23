@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+        <title>Dashboard</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrapValidator.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                </div><!--/.navbar-collapse -->
+            </div>
+        </div>
+
+        <!--Main Container-->
+        <div class="container" style="margin-top:70px">
+            <h1 class="text-center">Startup Name</h1>
+
+            <!--Assessments-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="thumbnail">
+                        <h1>Assessments</h1>
+
+                        <div class="row">
+
+                            <div class="col-md-3">
+                    <!--Customers-->
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Customers</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; color:black;">
+                                    0%
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#customersModal">Start</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="customersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h3 class="modal-title text-center">Customers</h3>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="row">
+
+                                                <!-- Customer Form -->
+                                                <div class="col-md-8">
+                                                    <form id="customerForm" method="post" class="form-horizontal bv-form"
+                                                          data-bv-message="This value is not valid"
+                                                          data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                                                          data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                                                          data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
+                                                        <!--Age-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Age:</label>
+                                                            <div class="col-md-8">
+                                                                <select class="form-control" name="age" required>
+                                                                    <option value="">-- Select age --</option>
+                                                                    <option value="0-18">0-18</option>
+                                                                    <option value="18-22">18-22</option>
+                                                                    <option value="22+">22+</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Income-->
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Income:</label>
+                                                            <div class="col-lg-8">
+                                                                <select class="form-control" name="income" required>
+                                                                    <option value="">-- Select income --</option>
+                                                                    <option value="0-$100k">0-$100k</option>
+                                                                    <option value="$100k-$500k">$100k-$500k</option>
+                                                                    <option value="$500k-$1mil">$500k-$1mil</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Sex-->
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Sex:</label>
+                                                            <div class="col-lg-8">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="male" id="optionsRadios1" value="male">
+                                                                        Male
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="female" id="optionsRadios2" value="female">
+                                                                        Female
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Education-->
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Education:</label>
+                                                            <div class="col-lg-8">
+                                                                <select class="form-control" name="education" required>
+                                                                    <option value="">-- Select education --</option>
+                                                                    <option value="nohs">No H.S.</option>
+                                                                    <option value="hs">H.S. Graduate</option>
+                                                                    <option value="college">College Graduate</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-lg-8 col-lg-offset-4">
+                                                                <button type="button" class="btn btn-success btn-lg btn-block">Complete</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+
+                                                <!-- Resources -->
+                                                <div class="col-md-4">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">Resources</div>
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item"><a href="http://www.quantcast.com/">Quantcast</a></li>
+                                                            <li class="list-group-item"><a href="http://www.alexa.com/">Alexa</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                            <div class="col-md-3">
+                    <!--Market-->
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Market</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #f0ad4e">
+                                    50%
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#marketModal">Resume</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="marketModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h3 class="modal-title text-center">Market</h3>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="row">
+
+                                                <!-- Market Form -->
+                                                <div class="col-md-8">
+                                                    <form id="marketForm" method="post" class="form-horizontal bv-form"
+                                                          data-bv-message="This value is not valid"
+                                                          data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                                                          data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                                                          data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
+                                                        <!--Market Size Units-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Market Size (#):</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="marketSizeUnits" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Market Size Dollars-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Market Size ($):</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="marketSizeDollars" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Competitors-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Top Three Competitors:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="firstCompetitor" required/>
+                                                            </div>
+                                                            <div class="col-md-8 col-md-offset-4">
+                                                                <input type="text" class="form-control" name="secondCompetitor" required/>
+                                                            </div>
+                                                            <div class="col-md-8 col-md-offset-4">
+                                                                <input type="text" class="form-control" name="thirdCompetitor" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Submit-->
+                                                        <div class="form-group">
+                                                            <div class="col-lg-8 col-lg-offset-4">
+                                                                <button type="button" class="btn btn-success btn-lg btn-block">Complete</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+
+                                                <!-- Resources -->
+                                                <div class="col-md-4">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">Resources</div>
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item"><a href="http://www.google.com/trends/">Google Trends</a></li>
+                                                            <li class="list-group-item"><a href="http://www.thinkwithgoogle.com/#utm_medium=et&utm_campaign=en&utm_source=us-en-et-insights">Google Think Insights</a></li>
+                                                            <li class="list-group-item"><a href="http://www.crunchbase.com/">Crunchbase</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                            <div class="col-md-3">
+                            <!--Product-->
+                            <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Product</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background-color: #5cb85c">
+                                    100%
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-success btn-block" data-toggle="modal" data-target="#productModal">Review</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h3 class="modal-title text-center">Product</h3>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="row">
+
+                                                <!-- Customer Form -->
+                                                <div class="col-md-8">
+                                                    <form id="productForm" method="post" class="form-horizontal bv-form"
+                                                          data-bv-message="This value is not valid"
+                                                          data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                                                          data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                                                          data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
+                                                        <!--Product Stage-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Product Stage:</label>
+                                                            <div class="col-md-8">
+                                                                <select class="form-control" name="stage" required>
+                                                                    <option value="">-- Select stage --</option>
+                                                                    <option value="idea">Idea</option>
+                                                                    <option value="sketch">Sketch</option>
+                                                                    <option value="prototype">Prototype</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--App Types-->
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">App Type(s):</label>
+                                                            <div class="col-lg-8">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="web" id="optionsRadios1" value="web">
+                                                                        Web
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="iOS" id="optionsRadios2" value="iOS">
+                                                                        iOS
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="android" id="optionsRadios2" value="android">
+                                                                        Android
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Server-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Server:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="server" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Server Side Language-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Server Side Language:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="serverSideLang" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--UI Build-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">UI Build:</label>
+                                                            <div class="col-md-8">
+                                                                <select class="form-control" name="stage" required>
+                                                                    <option value="">-- Select Build --</option>
+                                                                    <option value="template">Template</option>
+                                                                    <option value="framework">Framework</option>
+                                                                    <option value="custom">Custom</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Analytics-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Analytics:</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="analytics" required/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-lg-8 col-lg-offset-4">
+                                                                <button type="button" class="btn btn-success btn-lg btn-block">Complete</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+
+                                                <!-- Resources -->
+                                                <div class="col-md-4">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">Resources</div>
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item"><a href="http://builtwith.com/">Built With</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+
+                            <div class="col-md-3">
+                    <!--Team-->
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Team</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; color:black;">
+                                    0%
+                                </div>
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#teamModal">Start</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h3 class="modal-title text-center">Team</h3>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="row">
+
+                                                <!-- Team Form -->
+                                                <div class="col-md-12">
+                                                    <form id="teamForm" method="post" class="form-horizontal bv-form"
+                                                          data-bv-message="This value is not valid"
+                                                          data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                                                          data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                                                          data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
+                                                        <!--Sales-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Sales:</label>
+                                                            <div class="col-md-8">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="beg" id="inlineRadio1" value="beg"> Beg
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="int" id="inlineRadio2" value="int"> Int
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="adv" id="inlineRadio3" value="adv"> Adv
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Marketing-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Marketing:</label>
+                                                            <div class="col-md-8">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="beg" id="inlineRadio1" value="beg"> Beg
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="int" id="inlineRadio2" value="int"> Int
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="adv" id="inlineRadio3" value="adv"> Adv
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Front End Dev-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Front End Dev:</label>
+                                                            <div class="col-md-8">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="beg" id="inlineRadio1" value="beg"> Beg
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="int" id="inlineRadio2" value="int"> Int
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="adv" id="inlineRadio3" value="adv"> Adv
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Back End Dev-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label">Back End Dev:</label>
+                                                            <div class="col-md-8">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="beg" id="inlineRadio1" value="beg"> Beg
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="int" id="inlineRadio2" value="int"> Int
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="adv" id="inlineRadio3" value="adv"> Adv
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-lg-8 col-lg-offset-4">
+                                                                <button type="button" class="btn btn-success btn-lg btn-block">Complete</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Basic Info-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="thumbnail">
+                        <h1>Basic Information</h1>
+
+                        <form id="registrationForm" method="post" class="form-horizontal bv-form"
+                              data-bv-message="This value is not valid"
+                              data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                              data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                              data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
+                            <!--Elevator pitch-->
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Elevator Pitch:</label>
+                                <div class="col-lg-9">
+                                    <p class="form-control-static">Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah</p>
+                                </div>
+                            </div>
+
+                            <!--Problem-->
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Problem:</label>
+                                <div class="col-lg-9">
+                                    <p class="form-control-static">Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah</p>
+                                </div>
+                            </div>
+
+                            <!--Solution-->
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Solution:</label>
+                                <div class="col-lg-9">
+                                    <p class="form-control-static">Blah blah blahBlah blah blahBlah blah blahBlah blah blahBlah blah blah</p>
+                                </div>
+                            </div>
+
+                            <!--Industry-->
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Industry:</label>
+                                <div class="col-lg-9">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>
+                            </div>
+
+                            <!--Employees-->
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label"># Employees:</label>
+                                <div class="col-lg-9">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>
+                            </div>
+
+                            <!--Location-->
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Location:</label>
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p class="form-control-static">Blah blah</p>
+                                </div>
+                            </div>
+
+                            <!--Founders-->
+                            <div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Founder(s):</label>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-lg-4 col-lg-offset-3">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-lg-4 col-lg-offset-3">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Advisors-->
+                            <div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Advisor(s):</label>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">Blah blah</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Investors-->
+                            <div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Investor(s):</label>
+                                    <div class="col-lg-4">
+                                        <p class="form-control-static">none</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Submit Form-->
+                            <div class="form-group">
+                                <div class="col-lg-9 col-lg-offset-3">
+                                    <button type="submit" class="btn btn-primary">Edit</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <hr>
+
+<!--Business Demo-->
+            <!--<form id="signupForm" method="post" class="form-horizontal bv-form"-->
+                  <!--data-bv-message="This value is not valid"-->
+                  <!--data-bv-feedbackicons-valid="glyphicon glyphicon-ok"-->
+                  <!--data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"-->
+                  <!--data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">-->
+
+                <!--&lt;!&ndash;B2B Industry&ndash;&gt;-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-md-4 control-label">Industry:</label>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<select class="form-control" name="industry" required>-->
+                            <!--<option value="">-- Select an industry --</option>-->
+                            <!--<option value="edtech">Ed Tech</option>-->
+                            <!--<option value="fintech">Fin Tech</option>-->
+                            <!--<option value="healthcare">Healthcare</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;B2B Employees&ndash;&gt;-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-lg-4 control-label"># Employees:</label>-->
+                    <!--<div class="col-lg-8">-->
+                        <!--<select class="form-control" name="employees" required>-->
+                            <!--<option value="">-- Select a value --</option>-->
+                            <!--<option value="0-10">0-10</option>-->
+                            <!--<option value="11-50">11-50</option>-->
+                            <!--<option value="50-100">50-100</option>-->
+                            <!--<option value="100+">100+</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;B2B Public Private&ndash;&gt;-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-lg-4 control-label">Business Type:</label>-->
+                    <!--<div class="col-lg-8">-->
+                        <!--<div class="checkbox">-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" name="public" id="optionsRadios1" value="public">-->
+                                <!--Public-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div class="checkbox">-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" name="private" id="optionsRadios2" value="private">-->
+                                <!--Private-->
+                            <!--</label>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;B2B Revenue&ndash;&gt;-->
+                <!--<div class="form-group">-->
+                    <!--<label class="col-lg-4 control-label">Revenue:</label>-->
+                    <!--<div class="col-lg-8">-->
+                        <!--<select class="form-control" name="revenue" required>-->
+                            <!--<option value="">-- Select a value --</option>-->
+                            <!--<option value="small">0-$500,000</option>-->
+                            <!--<option value="medium">$500,000 - $1 million</option>-->
+                            <!--<option value="large">$1 million +</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="form-group">-->
+                    <!--<div class="col-lg-8 col-lg-offset-4">-->
+                        <!--<button type="button" class="btn btn-success btn-lg btn-block">Complete</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</form>-->
+
+            <!-- Site footer -->
+            <div class="footer">
+                <p>© Partner Project 2014</p>
+            </div>
+
+        </div>
+        <!-- /container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!--Placed at the end of the document so the pages load faster-->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrapValidator.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#customerForm').bootstrapValidator();
+                $('#marketForm').bootstrapValidator();
+                $('#productForm').bootstrapValidator();
+                $('#teamForm').bootstrapValidator();
+            });
+        </script>
+
+    </body>
+
+</html>
