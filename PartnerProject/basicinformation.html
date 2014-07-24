@@ -88,25 +88,6 @@
                         </div>
                     </div>
 
-                    <!--Business Type-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Business Type:</label>
-                        <div class="col-lg-5">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="B2B" id="optionsRadios1" value="B2B" checked>
-                                    B2B
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="B2C" id="optionsRadios2" value="B2C">
-                                    B2C
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
                     <!--Employees-->
                     <div class="form-group">
                         <label class="col-lg-3 control-label"># Employees:</label>
@@ -142,98 +123,32 @@
                     </div>                                         
 
                     <!--Founders-->
-                    <div>
-                        <div class="form-group">
+                    <div class="form-group">
                             <label class="col-lg-3 control-label">Founder(s):</label>
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" required />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" required />
-                            </div>                        
-                        </div>                  
-
-                        <div class="form-group">
-                            <div class="col-lg-4 col-lg-offset-3">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div>                      
-
-                        <div class="form-group">
-                            <div class="col-lg-4 col-lg-offset-3">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div> 
+                            <div class="col-lg-9">
+                                <input class="btn btn-success" type="button" value="Add" id="addFounder">
+                            </div>
+                        <div id="containerFounder"></div>
                     </div>
 
                     <!--Advisors-->
-                    <div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Advisor(s):</label>
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div>                  
-
-                        <div class="form-group">
-                            <div class="col-lg-4 col-lg-offset-3">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div>                      
-
-                        <div class="form-group">
-                            <div class="col-lg-4 col-lg-offset-3">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div> 
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Advisor(s):</label>
+                        <div class="col-lg-9">
+                            <input class="btn btn-success" type="button" value="Add" id="addAdvisor">
+                        </div>
+                        <div id="containerAdvisor"></div>
                     </div>
-                    
+
                     <!--Investors-->
-                    <div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Investor(s):</label>
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                         
-                        </div>                  
-
-                        <div class="form-group">
-                            <div class="col-lg-4 col-lg-offset-3">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div>                      
-
-                        <div class="form-group">
-                            <div class="col-lg-4 col-lg-offset-3">
-                                <input type="text" class="form-control" name="city" placeholder="First Name" />
-                            </div> 
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" name="city" placeholder="Last Name" />
-                            </div>                        
-                        </div> 
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Investor(s):</label>
+                        <div class="col-lg-9">
+                            <input class="btn btn-success" type="button" value="Add" id="addInvestor">
+                        </div>
+                        <div id="containerInvestor"></div>
                     </div>
-                    
+
                     <!--Submit Form-->
                     <div class="form-group">
                         <div class="col-lg-9 col-lg-offset-3">
@@ -256,16 +171,83 @@
     <!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-<!--    Placed at the end of the document so the pages load faster-->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrapValidator.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#registrationForm').bootstrapValidator();        
+
+            //Add Founder
+            $('#addFounder').bind('click', function() {
+                if($('#containerFounder').find('input').length < 8) {
+                    $('#containerFounder').append('<div>' +
+                                                '<div class="col-lg-3 col-lg-offset-3">' +
+                                                    '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
+                                                '</div>' +
+                                                '<div class="col-lg-3">' +
+                                                    '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
+                                                '</div>' +
+                                                '<button class="btn btn-danger removeFounder" type="submit">Remove</button>' +
+                                            '</div>');
+                }
+            });
+
+            //Remove Founder
+            $('body').on('click', '.removeFounder', function() {
+                if($('#containerFounder').find('input').length > 0) {
+                    $(this).parent().remove();
+                }
+            });
+
+            //Add Advisor
+            $('#addAdvisor').bind('click', function() {
+                if($('#containerAdvisor').find('input').length < 8) {
+                    $('#containerAdvisor').append('<div>' +
+                            '<div class="col-lg-3 col-lg-offset-3">' +
+                            '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
+                            '</div>' +
+                            '<div class="col-lg-3">' +
+                            '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
+                            '</div>' +
+                            '<button class="btn btn-danger removeAdvisor" type="submit">Remove</button>' +
+                            '</div>');
+                }
+            });
+
+            //Remove Advisor
+            $('body').on('click', '.removeAdvisor', function() {
+                if($('#containerAdvisor').find('input').length > 0) {
+                    $(this).parent().remove();
+                }
+            });
+
+            //Add Investor
+            $('#addInvestor').bind('click', function() {
+                if($('#containerInvestor').find('input').length < 8) {
+                    $('#containerInvestor').append('<div>' +
+                            '<div class="col-lg-3 col-lg-offset-3">' +
+                            '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
+                            '</div>' +
+                            '<div class="col-lg-3">' +
+                            '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
+                            '</div>' +
+                            '<button class="btn btn-danger removeInvestor" type="submit">Remove</button>' +
+                            '</div>');
+                }
+            });
+
+            //Remove Investor
+            $('body').on('click', '.removeInvestor', function() {
+                if($('#containerInvestor').find('input').length > 0) {
+                    $(this).parent().remove();
+                }
+            });
+
+            //Form Validation
+            $('#registrationForm').bootstrapValidator();
+            
         });
     </script>
 </body>
