@@ -13,7 +13,7 @@
         <!--Font Awesome Icons-->
         <link href="assets/icons/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-        <!--Bootstrap-->
+        <!--Bootstrap CSS-->
         <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
         <!--Custom CSS-->
@@ -31,6 +31,7 @@
     <body>
 
         <div class="container-fluid">
+
             <div class="row">
 
                 <!-- Mobile nav-->
@@ -51,17 +52,16 @@
                         <div class="collapse navbar-collapse" id="navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li><a href="#intro">Intro</a></li>
-                                <!-- <li><a href="#skills">Skills</a></li> -->
                                 <li><a href="#skills">Skills</a></li>
-                                <li><a href="#experience">Experience</a></li>
-                                <li><a href="#education">Education</a></li>
+                                <li><a href="#projects">Projects</a></li>
                                 <li><a href="#creations">Creations</a></li>
+                                <li><a href="#mystory">My Story</a></li>
                             </ul>
-
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="http://www.linkedin.com/pub/max-mershon/36/720/4a7/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
                                 <li><a href="https://github.com/MaxPrimoMershon"><i class="fa fa-github-square fa-lg"></i></a></li>
                                 <li><a href="mailto:mershon.max16@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+                                <li><a href="https://drive.google.com/file/d/0B8twAiT8iwUZemR6OWticDRzZnc/edit?usp=sharing"><i class="fa fa-file-text fa-lg"></i></a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -85,12 +85,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul>
-                                <a href="#intro"><li><i class="fa fa-home fa-2x"></i><span class="nav-lg-text">Intro</span></li></a>
-                                <!-- <li><a href="#projects"><i class="fa fa-folder-open fa-lg"></i> Projects</a></li> -->
-                                <a href="#skills"><li><i class="fa fa-code fa-2x"></i><span class="nav-lg-text">Skills</span></li></a>
-                                <a href="#experience"><li><i class="fa fa-institution fa-2x"></i><span class="nav-lg-text">Experience</span></li></a>
-                                <a href="#education"><li><i class="fa fa-graduation-cap fa-2x"></i><span class="nav-lg-text">Education</span></li></a>
-                                <a href="#creations"><li><i class="fa fa-lightbulb-o fa-2x"></i><span class="nav-lg-text">Creations</span></li></a>
+                                <li><a href="#intro"><i class="fa fa-home fa-2x"></i><span class="nav-lg-text">Intro</span></a></li>
+                                <li><a href="#skills"><i class="fa fa-code fa-2x"></i><span class="nav-lg-text">Skills</span></a></li>
+                                <li><a href="#projects"><i class="fa fa-folder-open fa-2x"></i><span class="nav-lg-text">Projects</span></a></li>
+                                <li><a href="#creations"><i class="fa fa-lightbulb-o fa-2x"></i><span class="nav-lg-text">Creations</span></a></li>
+                                <li><a href="#mystory"><i class="fa fa-child fa-2x"></i><span class="nav-lg-text">My Story</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -111,100 +110,51 @@
                     </div>
                 </section>
 
-                <!--Projects-->
-<!--
-                <section id="projects" class="col-md-9 col-md-offset-3">
-                    <h1 class="text-center">Projects</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                        </div>
-                        <div class="col-md-6">
-                        </div>
-                    </div>
-                </section>
--->
-
                 <!--Skills-->
-                <section id="skills" class="col-md-9 col-md-offset-3 fade-it-skills">
+                <section id="skills" class="col-md-9 col-md-offset-3">
                     <h1 class="text-center">Skills</h1>
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-xs-6 fade-it-htmlcssskills">
                             <img src="assets/img/html5.png" alt="html5" class="img-responsive center-block" />
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-xs-6  fade-it-htmlcssskills">
                             <img src="assets/img/css3.png" alt="css3" class="img-responsive center-block" />
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-xs-6 fade-it-jsjqskills">
                             <img src="assets/img/javascript.png" alt="javascript" class="img-responsive center-block" />
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 col-xs-6 fade-it-jsjqskills">
                             <img src="assets/img/jquery.png" alt="jquery" class="img-responsive center-block" />
                         </div>
                     </div>
                 </section>
 
-                <!--Experience -->
-                <section id="experience" class="col-md-9 col-md-offset-3 fade-it-experience">
-                    <h1 class="text-center">Experience</h1>
+                <!--Projects-->
+                <section id="projects" class="col-md-9 col-md-offset-3">
+                    <h1 class="text-center">Projects</h1>
                     <div class="row">
 
-                        <div class="col-sm-6 fade-it-experience">
-                            <img src="assets/img/accenture.jpg" class="center-block img-thumbnail" id="accenture-img" alt="accenture logo">
+                        <!--Earlybird Hatch-->
+                        <div class="col-md-6 fade-it-earlybird">
+                            <img src="http://placehold.it/550x350" class="img-responsive img-thumbnail"/>
                             <div class="caption">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>Business &amp Systems Integration Analyst</strong><br><em>(Jul. '12 - May '14)</em><br></div>
+                                    <div class="panel-heading"><strong>Earlybird Hatch</strong></div>
                                     <div class="panel-body">
-                                        <p>Created an end-to-end process flow of an example use case using UI mockups created by the UX team to present to business leads. Created a visual representation of the different types of chemical sites across North America using Google Fusion Tables. Designed and developed the front end of a web application for an event registration system using HTML and CSS.</p>
+                                        <p>Developing a minimal viable product for a startup evaluator using HTML5, CSS3, JavaScript, and jQuery.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 fade-it-experience">
-                            <img src="assets/img/2degrees.jpg" class="center-block img-thumbnail" id="twodegrees-img" alt="two degrees logo">
+                        <!--Klatt Employment-->
+                        <div class="col-md-6 fade-it-klatt">
+                            <img src="http://placehold.it/550x350" class="img-responsive img-thumbnail"/>
                             <div class="caption">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>UIUC Campus Director</strong><br><em>(Sept. '11 - May '12)</em><br></div>
+                                    <div class="panel-heading"><strong>Klatt Employment Services</strong></div>
                                     <div class="panel-body">
-                                        <p>Created a Two Degrees tank top using Adobe Illustrator and sold it prior to college spring break. Finished in top 25% of campus directors in points for completing various marketing and sales tasks.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!--Education-->
-                <section id="education" class="col-md-9 col-md-offset-3 fade-it-education">
-                    <h1 class="text-center">Education</h1>
-                    <div class="row">
-
-                        <div class="col-sm-6 fade-it-education">
-                            <img src="assets/img/sic.png" class="center-block img-thumbnail" id="sic-img" alt="startup institute logo">
-                            <div class="caption">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>Product &amp Design Student</strong><br><em>Summer 2014</em><br></div>
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li><strong>Partner Project</strong> - Creating a MVP for a design/dev startup shop using HTML5/CSS3/JS/jQuery.</li>
-                                            <li><strong>Course Work</strong> - Learning HTML5/CSS3/JS/jQuery fundamentals through classroom lessons and group projects.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 fade-it-education">
-                            <img src="assets/img/uofi.jpg" class="center-block img-thumbnail" id="uofi-img" alt="uofi logo">
-                            <div class="caption">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>B.S. General Engineering</strong><br><em>Class of 2012</em><br></div>
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li><strong>Entrepreneurs Without Borders</strong> - Participated in a foreign exchange program with a Croatian university to learn more about each others entrepreneurial ecosystems.</li>
-                                            <li><strong>Technology Entrepreneurship Center</strong> - Selected to attend a workshop in Silicon Valley with the TEC to learn about tech entrepreneurship.</li>
-                                        </ul>
+                                        <p>Using HTML and CSS to redesign a small business website.</p>
                                     </div>
                                 </div>
                             </div>
@@ -214,17 +164,20 @@
                 </section>
 
                 <!--Creations-->
-                <section id="creations" class="col-md-9 col-md-offset-3 fade-it-creations">
+                <section id="creations" class="col-md-9 col-md-offset-3">
                     <h1 class="text-center">Creations</h1>
                     <div class="row">
 
-                        <div class="col-sm-4 ">
-                            <a href="http://maxprimomershon.com/VICE-guide-to-travel/index_v0.3.3.html">
-                                <img src="assets/img/vicemaps.png" class="img-thumbnail img-responsive center-block">
-                            </a>
+                        <!--VICE Maps-->
+                        <div class="col-sm-4 fade-it-vice">
                             <div class="caption">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>VICE Maps</strong></div>
+                                    <div class="panel-body">
+                                        <a href="http://maxprimomershon.com/VICE-guide-to-travel/index_v0.3.3.html">
+                                            <img src="assets/img/vicemaps.png" class="img-responsive center-block">
+                                        </a>
+                                    </div>
+                                    <div class="panel-heading"><strong>Web Dev: "VICE Maps"</strong></div>
                                     <div class="panel-body">
                                         <p>Created a simple app called "VICE Maps" using HTML, CSS, Javascript, jQuery, and a couple Google APIs.</p>
                                     </div>
@@ -232,14 +185,16 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
-                            <div class="videoWrapper">
-                                <!-- Copy & Pasted from YouTube -->
-                                <iframe width="560" height="349" src="http://www.youtube.com/embed/NfAV3BGXF7c?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                        <!--Achieving Success through Failure-->
+                        <div class="col-sm-4 fade-it-youtube">
                             <div class="caption">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>Achieving Success through Failure</strong></div>
+                                    <div class="panel-body">
+                                        <div class="videoWrapper">
+                                            <iframe width="560" height="349" src="http://www.youtube.com/embed/NfAV3BGXF7c?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="panel-heading"><strong>Video: "Achieving Success through Failure"</strong></div>
                                     <div class="panel-body">
                                         <p>Created a short compilation video (>35k views on YouTube) of successful individuals talking about failure called “Achieving Success through Failure” using Adobe Premiere.</p>
                                     </div>
@@ -247,13 +202,16 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
-                            <a href="http://twodegreesfood.com/2012/05/inspiring-change/">
-                                <img src="assets/img/twodegreesblog.png" class="img-thumbnail img-responsive center-block">
-                            </a>
+                        <!--2 Degrees Blog Post-->
+                        <div class="col-sm-4 fade-it-tdpost">
                             <div class="caption">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><strong>2 Degrees Blog Post: Inspiring Change</strong></div>
+                                    <div class="panel-body">
+                                        <a href="http://twodegreesfood.com/2012/05/inspiring-change/">
+                                            <img src="assets/img/twodegreesblog.png" class="img-thumbnail img-responsive center-block">
+                                        </a>
+                                    </div>
+                                    <div class="panel-heading"><strong>Writing: "Inspiring Change"</strong></div>
                                     <div class="panel-body">
                                         <p>Wrote a blog post about 2 Degree's mission using the "Start With Why" leadership philosophy described in a TED talk for the startup's main blog.</p>
                                     </div>
@@ -264,6 +222,80 @@
                     </div>
                 </section>
 
+                <!--My Story-->
+                <section id="mystory" class="col-md-9 col-md-offset-3">
+                    <h1 class="text-center">My Story</h1>
+
+                    <ul class="timeline">
+
+                        <!--Startup Institute-->
+                        <li class="fade-it-sic">
+                            <div class="timeline-badge info"><i class="fa fa-graduation-cap fa-lg"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <img src="assets/img/sic.png" id="sicimg" alt="Startup Institute Chicago" class="img-responsive center-block" /><br>
+                                    <hr>
+                                    <h4 class="timeline-title">Product &amp Design Student<br></h4>
+                                    <p><small class="text-muted">Summer 2014</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Creating a minimal viable product for a design/dev startup shop using HTML5/CSS3/JS/jQuery. Learning HTML5/CSS3/JS/jQuery fundamentals through classroom lessons and group projects.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Accenture-->
+                        <li class="timeline-inverted fade-it-accenture">
+                            <div class="timeline-badge success"><i class="fa fa-briefcase fa-lg"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <img src="assets/img/accenture.jpg" id="accentureimg" alt="Accenture" class="img-responsive center-block" /><br>
+                                    <hr>
+                                    <h4 class="timeline-title">Business &amp Systems Integration Analyst<br></h4>
+                                    <p><small class="text-muted">July 2012 - May 2014</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Created an end-to-end process flow of an example use case using UI mockups created by the UX team to present to business leads. Created a visual representation of the different types of chemical sites across North America using Google Fusion Tables. Designed and developed the front end of a web application for an event registration system using HTML and CSS.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--U of I-->
+                        <li class="fade-it-uiuc">
+                            <div class="timeline-badge info"><i class="fa fa-graduation-cap fa-lg"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <img src="assets/img/uiuclogo.gif" id="uofiimg" alt="University of Illinois" class="img-responsive center-block" /><br>
+                                    <hr>
+                                    <h4 class="timeline-title">B.S. General Engineering<br></h4>
+                                    <p><small class="text-muted">Class of 2012</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>First exposed to technology entrepreneurship when I was selected to attend a workshop in Silicon Valley with U of I's Technology Entrepreneurship Center. Also, participated in a foreign exchange program through Entrepreneurs Without Borders with a Croatian university to learn more about each others entrepreneurial ecosystems.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Two Degrees-->
+                        <li class="timeline-inverted fade-it-tdcd">
+                            <div class="timeline-badge success"><i class="fa fa-briefcase fa-lg"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <img src="assets/img/twodegreesfoodlogo.jpg" id="tdimg" alt="Two Degrees" class="img-responsive center-block" /><br>
+                                    <hr>
+                                    <h4 class="timeline-title">UIUC Campus Director<br></h4>
+                                    <p><small class="text-muted">September 2011 - May 2012</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Created a Two Degrees tank top using Adobe Illustrator and sold it prior to college spring break. Finished in top 25% of campus directors in points for completing various marketing and sales tasks.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </section>
+
                 <!--Footer-->
                 <footer class="col-md-9 col-md-offset-3">
                     <p class="pull-right"><a href="#top">Back to top</a></p>
@@ -271,9 +303,10 @@
                 </footer>
 
             </div>
+
         </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- jQuery -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <!-- Bootstrap Navbar Collapse effect-->
@@ -289,10 +322,20 @@
                 //Initialize Superscrollorama for transition effects
                 var controller = $.superscrollorama();
                 //insert addTween method to fade in elements
-                controller.addTween('.fade-it-skills', TweenMax.from( $('.fade-it-skills'),2, {css:{opacity: 0}}),0,-150);
-                controller.addTween('.fade-it-experience', TweenMax.from( $('.fade-it-experience'),2, {css:{opacity: 0}}),0,-150);
-                controller.addTween('.fade-it-education', TweenMax.from( $('.fade-it-education'),2, {css:{opacity: 0}}),0,-160);
-                controller.addTween('.fade-it-creations', TweenMax.from( $('.fade-it-creations'),2, {css:{opacity: 0}}),0,-160);
+                controller.addTween('.fade-it-htmlcssskills', TweenMax.from( $('.fade-it-htmlcssskills'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-jsjqskills', TweenMax.from( $('.fade-it-jsjqskills'),2, {css:{opacity: 0}}),0,-150);
+
+                controller.addTween('.fade-it-earlybird', TweenMax.from( $('.fade-it-earlybird'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-klatt', TweenMax.from( $('.fade-it-klatt'),2, {css:{opacity: 0}}),0,-150);
+
+                controller.addTween('.fade-it-vice', TweenMax.from( $('.fade-it-vice'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-youtube', TweenMax.from( $('.fade-it-youtube'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-tdpost', TweenMax.from( $('.fade-it-tdpost'),2, {css:{opacity: 0}}),0,-150);
+
+                controller.addTween('.fade-it-sic', TweenMax.from( $('.fade-it-sic'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-accenture', TweenMax.from( $('.fade-it-accenture'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-uiuc', TweenMax.from( $('.fade-it-uiuc'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-tdcd', TweenMax.from( $('.fade-it-tdcd'),2, {css:{opacity: 0}}),0,-150);
 
                 //Smooth Scrolling
                 $(function() {
