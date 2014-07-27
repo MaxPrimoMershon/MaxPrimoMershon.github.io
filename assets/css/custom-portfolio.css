@@ -83,23 +83,32 @@ section h1 {
 
 /*Project*/
 
-#projects{
-    background-color: rgb(200, 200, 198);
+#projects h4{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.skills img{
+    display: inline;
+    margin: -20px 0px 0px 0px;
+    padding: auto 0px;
+}
+#css3, #html5, #js {
+    width: 15%;
+}
+
+#jquery{
+    width: 45%;
 }
 
 /*End Project*/
 
 
-/*Skills*/
-
-#skills{
-    padding-bottom: 20px;
-}
-
-/*End Skills*/
-
-
 /*Creations*/
+
+#creations{
+    background-color: rgb(200, 200, 198);
+}
 
 /*Fluid Video*/
 .videoWrapper {
@@ -123,6 +132,11 @@ section h1 {
 
 #mystory{
     background-color: rgb(200, 200, 198);
+}
+
+#mystory h1{
+    margin-top:0px;
+    padding-top: 20px;
 }
 
 #mystory hr{
