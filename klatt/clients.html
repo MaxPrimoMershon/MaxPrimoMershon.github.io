@@ -8,10 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Klatt Employment Services</title>
+    <title>Clients - Klatt Employment Services</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link href="assets/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,7 +26,7 @@
 <body>
 
 <!--Navbar-->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,13 +35,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Klatt Employment Services</a>
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.gif" class="img-responsive" alt="Klatt Temporary Services"></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">Candidates</a></li>
-                <li class="active"><a href="#contact">Clients</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="candidates.html">Candidates</a></li>
+                <li class="active"><a href="clients.html">Clients</a></li>
                 <li><a href="#contact">Music</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -46,7 +49,7 @@
 </nav>
 
 <!--Container-->
-<div class="container">
+<div class="container top-cushion">
 
     <!--Services-->
     <section class="row">
@@ -54,7 +57,7 @@
         <article class="col-md-12">
             <div class="jumbotron">
                 <h1 class="text-center">Services</h1>
-                <p>...</p>
+                <p>Something about services offered...</p>
             </div>
         </article>
 
@@ -62,32 +65,40 @@
 
     <hr>
 
-    <!--Policies-->
-    <section class="row">
-        <h1 class="text-center">Policies</h1>
-        <p>...</p>
-    </section>
-
-    <hr>
-
     <!--Request-->
     <section class="row">
-        <h1 class="text-center">Submit a Request</h1>
         <div class="col-md-6">
-            <p>Lorem Ipsum..........</p>
+            <h3 class="text-center">Policies</h3>
+            <p>Klatt Employment Services can help you staff your office with professional temporary or permanent employees.</p>
+            <p>Orders may be placed and resumes requested for permanent positions. Individuals are interviewed and offered a position with you directly and do not come as temporaries through Klatt Temporary Service, Inc. If the individual fails to remain in your employ for thirty days we will replace that individual at no additional charge.</p>
+            <p>Temporary contracts may be bought out at any time during an assignment as a Klatt Temporary for your company. The charge for this is 1.25 x the hourly billing rate.</p>
+            <p>You may hire a Klatt temporary employee after a 90 day notification period without any additional charge. You must notify Klatt of a desire to hire a temporary employee. That employee must remain on Klatt's payroll for 90 days thereafter. The date of notification will be considered the first of the 90 day waiting period.</p>
         </div>
         <div class="col-md-6">
+            <h3 class="text-center">Submit a Request</h3>
             <form role="form">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
                 </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Check me out
-                    </label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Company Name">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Start Date: MM/DD/YYYY">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="End Date: MM/DD/YYYY">
+                </div>
+                <button type="submit" class="btn btn-success">Submit Request</button>
             </form>
         </div>
     </section>
@@ -96,7 +107,7 @@
 
     <!--Footer-->
     <footer class="footer">
-        <p>&copy; Company 2014</p>
+        <p>&copy; Klatt Employment Services 2014</p>
     </footer>
 
 </div><!-- /.container -->
