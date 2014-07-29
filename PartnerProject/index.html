@@ -60,7 +60,7 @@
 
             <!-- Modal -->
             <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-sm">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -68,74 +68,83 @@
                         </div>
 
                         <div class="modal-body">
-                            <!-- The form is placed inside the body of modal -->                                                                                                                                                                                                                                
-                            <form id="signupForm" method="post" class="form-horizontal bv-form" 
+                            <!-- The form is placed inside the body of modal -->
+
+                            <form id="signupForm" method="post" class="form-horizontal bv-form"
                                   data-bv-message="This value is not valid" 
                                   data-bv-feedbackicons-valid="glyphicon glyphicon-ok" 
                                   data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" 
-                                  data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">                                                          
-                                
+                                  data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
                                 <div class="form-group">
-                                    <label class="col-lg-4 control-label">Startup Name</label>
-                                    <div class="col-lg-8">
-                                        <input type="text" class="form-control" name="startupName" 
+                                    <div class="col-lg-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                            <input type="text" class="form-control" name="startupName" placeholder="Startup Name"
                                                required />
+                                        </div>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group has-feedback has-error">
-                                    <label class="col-lg-4 control-label">Email address</label>
-                                    <div class="col-lg-8">
-                                        <input class="form-control" name="email" type="email" 
-                                               data-bv-emailaddress-message="The input is not a valid email address" 
-                                               data-bv-field="email"
-                                               required />
-                                        <i class="form-control-feedback glyphicon glyphicon-remove" 
+                                    <div class="col-lg-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                                            <input class="form-control" name="email" type="email" placeholder="Email"
+                                                   data-bv-emailaddress-message="The input is not a valid email address"
+                                                   data-bv-field="email"
+                                                   required />
+                                            <i class="form-control-feedback glyphicon glyphicon-remove"
                                                data-bv-icon-for="email" style="display: block;"></i>
-                                        <small class="help-block" 
-                                               data-bv-validator="emailAddress" 
-                                               data-bv-for="email" 
-                                               data-bv-result="INVALID" style="display: block;">The input is not a valid email address</small>
+                                            <small class="help-block"
+                                                   data-bv-validator="emailAddress"
+                                                   data-bv-for="email"
+                                                   data-bv-result="INVALID" style="display: block;">The input is not a valid email address</small>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group has-feedback has-error">
-                                    <label class="col-lg-4 control-label">Password</label>
-                                    <div class="col-lg-8">
-                                        <input type="password" class="form-control" name="password" 
-                                               required 
-                                               data-bv-identical="true" 
-                                               data-bv-identical-field="confirmPassword" 
-                                               data-bv-identical-message="The password and its confirm are not the same" 
-                                               data-bv-field="password">
-                                        <i class="form-control-feedback" data-bv-icon-for="password" style="display: none;"></i>
-                                        <small class="help-block" 
-                                                data-bv-validator="identical" 
-                                                data-bv-for="password" 
-                                                data-bv-result="NOT_VALIDATED" 
-                                                style="display: none;">The password and its confirm are not the same</small>
+                                    <div class="col-lg-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                                   required
+                                                   data-bv-identical="true"
+                                                   data-bv-identical-field="confirmPassword"
+                                                   data-bv-identical-message="The password and its confirm are not the same"
+                                                   data-bv-field="password">
+                                            <i class="form-control-feedback" data-bv-icon-for="password" style="display: none;"></i>
+                                            <small class="help-block"
+                                                   data-bv-validator="identical"
+                                                   data-bv-for="password"
+                                                   data-bv-result="NOT_VALIDATED"
+                                                   style="display: none;">The password and its confirm are not the same</small>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group has-feedback">
-                                    <label class="col-lg-4 control-label">Retype password</label>
-                                    <div class="col-lg-8">
-                                        <input type="password" class="form-control" name="confirmPassword" 
-                                               required 
-                                               data-bv-identical="true" 
-                                               data-bv-identical-field="password" 
-                                               data-bv-identical-message="The password and its confirm are not the same" 
-                                               data-bv-field="confirmPassword">
-                                        <i class="form-control-feedback" data-bv-icon-for="confirmPassword" style="display: none;"></i>
-                                        <small class="help-block" 
-                                               data-bv-validator="identical" 
-                                               data-bv-for="confirmPassword" 
-                                               data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small>
+                                    <div class="col-lg-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                                            <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm Password"
+                                                   required
+                                                   data-bv-identical="true"
+                                                   data-bv-identical-field="password"
+                                                   data-bv-identical-message="The password and its confirm are not the same"
+                                                   data-bv-field="confirmPassword">
+                                            <i class="form-control-feedback" data-bv-icon-for="confirmPassword" style="display: none;"></i>
+                                            <small class="help-block"
+                                                   data-bv-validator="identical"
+                                                   data-bv-for="confirmPassword"
+                                                   data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small>
+                                        </div>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <div class="col-lg-8 col-lg-offset-4">
+                                    <div class="col-lg-12">
                                         <button type="button" class="btn btn-primary btn-lg btn-block">Sign Up</button>
                                     </div>
                                 </div>
