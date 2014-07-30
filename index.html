@@ -35,7 +35,7 @@
             <div class="row">
 
                 <!-- Mobile nav-->
-                <nav class="navbar navbar-inverse navbar-fixed-top navbar-example hidden-md hidden-lg" role="navigation">
+                <nav class="navbar navbar-inverse navbar-fixed-top navbar-example" role="navigation">
                     <div class="container-fluid" id="navbar-scroll">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header mobile-nav">
@@ -66,40 +66,12 @@
                     </div><!-- /.container-fluid -->
                 </nav>
 
-                <!--Desktop/Tablet Nav Bar-->
-                <nav id="sidenav" class="col-md-3 hidden-sm hidden-xs">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="text-center">Max Mershon</h2>
-                            <h5 class="text-center">Front End Developer</h5>
-                            <div id="social-icons">
-                                <a href="http://www.linkedin.com/pub/max-mershon/36/720/4a7/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                                <a href="https://github.com/MaxPrimoMershon"><i class="fa fa-github-square fa-2x"></i></a>
-                                <a href="mailto:mershon.max16@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
-                                <a href="https://drive.google.com/file/d/0B8twAiT8iwUZemR6OWticDRzZnc/edit?usp=sharing"><i class="fa fa-file-text fa-2x"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul>
-                                <li><a href="#intro"><i class="fa fa-home fa-2x"></i><span class="nav-lg-text">Intro</span></a></li>
-                                <li><a href="#mystory"><i class="fa fa-child fa-2x"></i><span class="nav-lg-text">My Story</span></a></li>
-                                <li><a href="#projects"><i class="fa fa-folder-open fa-2x"></i><span class="nav-lg-text">Projects</span></a></li>
-                                <li><a href="#creations"><i class="fa fa-lightbulb-o fa-2x"></i><span class="nav-lg-text">Creations</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
                 <!--Intro-->
-                <section id="intro" class="col-md-9 col-md-offset-3">
+                <section id="intro" class="col-md-12">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <blockquote>
-                                <p>"Live as if you were to die tomorrow. Learn as if you were to live forever."</p>
-                                <footer><cite title="Source Title">Gandhi</cite></footer>
+                                <p>I'm a Front End Developer in the Product & Design track at Startup Institute Chicago interested in creating user friendly products in a variety of different industries because I love empathizing with different types of people and exploring different corners of society.</p>
                             </blockquote>
                             <a href="#mystory">
                                 <i class="fa fa-chevron-circle-down fa-4x"></i>
@@ -109,7 +81,7 @@
                 </section>
 
                 <!--My Story-->
-                <section id="mystory" class="col-md-9 col-md-offset-3">
+                <section id="mystory" class="col-md-12">
                     <h1 class="text-center">My Story</h1>
 
                     <ul class="timeline">
@@ -185,7 +157,7 @@
                 </section>
 
                 <!--Projects-->
-                <section id="projects" class="col-md-9 col-md-offset-3">
+                <section id="projects" class="col-md-12">
                     <h1 class="text-center">Projects</h1>
 
                     <!--Earlybird-->
@@ -299,7 +271,7 @@
                 </section>
 
                 <!--Creations-->
-                <section id="creations" class="col-md-9 col-md-offset-3">
+                <section id="creations" class="col-md-12">
                     <h1 class="text-center">Creations</h1>
                     <div class="row">
 
@@ -357,10 +329,8 @@
                     </div>
                 </section>
 
-
-
                 <!--Footer-->
-                <footer class="col-md-9 col-md-offset-3">
+                <footer class="col-md-12">
                     <p class="pull-right"><a href="#top">Back to top</a></p>
                     <p>&copy; 2014 Max Mershon</p>
                 </footer>
@@ -393,10 +363,10 @@
                 controller.addTween('.fade-it-youtube', TweenMax.from( $('.fade-it-youtube'),2, {css:{opacity: 0}}),0,-150);
                 controller.addTween('.fade-it-tdpost', TweenMax.from( $('.fade-it-tdpost'),2, {css:{opacity: 0}}),0,-150);
 
-                controller.addTween('.fade-it-sic', TweenMax.from( $('.fade-it-sic'),2, {css:{opacity: 0}}),0,-150);
-                controller.addTween('.fade-it-accenture', TweenMax.from( $('.fade-it-accenture'),2, {css:{opacity: 0}}),0,-150);
-                controller.addTween('.fade-it-uiuc', TweenMax.from( $('.fade-it-uiuc'),2, {css:{opacity: 0}}),0,-150);
-                controller.addTween('.fade-it-tdcd', TweenMax.from( $('.fade-it-tdcd'),2, {css:{opacity: 0}}),0,-150);
+                controller.addTween('.fade-it-sic', TweenMax.from( $('.fade-it-sic'),2, {css:{opacity: 0}}),0,-200);
+                controller.addTween('.fade-it-accenture', TweenMax.from( $('.fade-it-accenture'),2, {css:{opacity: 0}}),0,-200);
+                controller.addTween('.fade-it-uiuc', TweenMax.from( $('.fade-it-uiuc'),2, {css:{opacity: 0}}),0,-200);
+                controller.addTween('.fade-it-tdcd', TweenMax.from( $('.fade-it-tdcd'),2, {css:{opacity: 0}}),0,-200);
 
                 //Smooth Scrolling
                 $(function() {
