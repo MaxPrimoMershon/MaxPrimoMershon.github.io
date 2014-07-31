@@ -14,6 +14,8 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrapValidator.min.css" rel="stylesheet">
 
+    <link href="style.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -96,48 +98,34 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label">Who are you currently selling to?</label>
+                <label class="control-label css-control-label">Who are you currently selling to?</label>
                 <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="">
-                        Consumers
-                    </label>
+                    <input type="checkbox" name="consumers" id="consumers" class="css-checkbox" />
+                    <label for="consumers" class="css-label">Consumers</label>
                 </div>
-                <div class="checkbox disabled">
-                    <label>
-                        <input type="checkbox" value="">
-                        Developers
-                    </label>
+                <div class="checkbox">
+                    <input type="checkbox" name="developers" id="developers" class="css-checkbox" />
+                    <label for="developers" class="css-label">Developers</label>
                 </div>
-                <div class="checkbox disabled">
-                    <label>
-                        <input type="checkbox" value="">
-                        Freelancers/Contractors
-                    </label>
+                <div class="checkbox">
+                    <input type="checkbox" name="freelance" id="freelance" class="css-checkbox" />
+                    <label for="freelance" class="css-label">Freelancers/Contractors</label>
                 </div>
-                <div class="checkbox disabled">
-                    <label>
-                        <input type="checkbox" value="">
-                        Large Enterprises
-                    </label>
+                <div class="checkbox">
+                    <input type="checkbox" name="enterprise" id="enterprise" class="css-checkbox" />
+                    <label for="enterprise" class="css-label">Large Enterprises</label>
                 </div>
-                <div class="checkbox disabled">
-                    <label>
-                        <input type="checkbox" value="">
-                        OEMs
-                    </label>
+                <div class="checkbox">
+                    <input type="checkbox" name="oems" id="oems" class="css-checkbox" />
+                    <label for="oems" class="css-label">OEMs</label>
                 </div>
-                <div class="checkbox disabled">
-                    <label>
-                        <input type="checkbox" value="">
-                        Government
-                    </label>
+                <div class="checkbox">
+                    <input type="checkbox" name="government" id="government" class="css-checkbox" />
+                    <label for="government" class="css-label">Government</label>
                 </div>
-                <div class="checkbox disabled">
-                    <label>
-                        <input type="checkbox" value="">
-                        Small-Medium Businesses
-                    </label>
+                <div class="checkbox">
+                    <input type="checkbox" name="smallbiz" id="smallbiz" class="css-checkbox" />
+                    <label for="smallbiz" class="css-label">Small-Medium Businesses</label>
                 </div>
             </div>
 
@@ -339,7 +327,7 @@
 
 <!-- Bootstrap core JavaScript -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/bootstrapValidator.min.js"></script>
 <script>
