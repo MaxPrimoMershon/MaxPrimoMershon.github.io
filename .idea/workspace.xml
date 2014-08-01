@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea23c18d-4617-44ce-8167-e2d2725621ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PartnerProject/dashboard-style.css" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\PartnerProject\EB_landingpage-master\css\bootstrap-theme.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\PartnerProject\EB_landingpage-master\css\bootstrap-theme.css.map" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\PartnerProject\EB_landingpage-master\css\bootstrap-theme.min.css" afterPath="" />
@@ -3553,7 +3552,7 @@
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\html5up-prologue\js\skel-panels.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\html5up-prologue\js\skel.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\test.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PartnerProject/assessments.html" afterPath="$PROJECT_DIR$/PartnerProject/assessments.html" />
     </list>
     <ignored path="MaxPrimoMershon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -3579,8 +3578,8 @@
       <file leaf-file-name="assessments.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PartnerProject/assessments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42424244" vertical-offset="510" max-vertical-offset="2227">
-              <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="2227">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding>
                 <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -4136,8 +4135,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PartnerProject/assessments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42424244" vertical-offset="510" max-vertical-offset="2227">
-          <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="2227">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
