@@ -1,5 +1,5 @@
 .top-cushion{
-    margin-top:70px;
+    margin-top:50px;
 }
 
 .navbar-brand{
@@ -14,6 +14,54 @@
 .tab-content{
     margin-top: 20px;
 }
+
+footer{
+    margin: 20px auto;
+}
+
+#intro{
+    background-size: cover;
+    background-image: url(https://googledrive.com/host/0B8twAiT8iwUZR2RXMEFHdHBXX2dRbG5vdmpQczJBQkZkWWNZ/);
+    height:650px;
+}
+
+#intro .jumbotron{
+    opacity:.7;
+    margin-top: 200px;
+}
+
+#intro .jumbotron a{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    background-color: #000051;
+}
+
+#intro .jumbotron a:hover{
+    color: #000051;
+    background-color: white;
+}
+
+#about{
+    background-size: cover;
+    background-image: url(https://googledrive.com/host/0B8twAiT8iwUZU3BicnI4eG5fbjA/);
+    height:450px;
+}
+
+#about .panel-default{
+    background-color: #CAD6DC;
+    }
+
+#testimonials{
+    background-color: #CAD6DC;
+}
+
+#contact{
+    background-color: #1D1F4B;
+    color:white;
+}
+
+
 
 /*Fluid Video*/
 .videoWrapper {
@@ -31,14 +79,3 @@
 }
 /*End Fluid Video*/
 
-.jumbotron a{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 24px;
-    background-color: #000066;
-}
-
-.jumbotron a:hover{
-    color: #000066;
-    background-color: white;
-}
