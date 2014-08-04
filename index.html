@@ -28,13 +28,13 @@
 
     </head>
 
-    <body data-spy="scroll" data-target=".navbar-example" data-offset="50">
+    <body data-spy="scroll" data-target=".navbar-example" data-offset="51">
 
         <div class="container-fluid">
 
             <div class="row">
 
-                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
                     <div class="container-fluid" id="navbar-scroll">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header mobile-nav">
@@ -369,22 +369,18 @@
                 controller.addTween('.fade-it-tdcd', TweenMax.from( $('.fade-it-tdcd'),2, {css:{opacity: 0}}),0,-200);
 
                 //Smooth Scrolling
-                $(function() {
-                    $('a[href*=#]:not([href=#])').click(function() {
-                        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                            var target = $(this.hash);
-                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                            if (target.length) {
-                                $('html,body').animate({
-                                    scrollTop: target.offset().top
-                                }, 1000);
-                                return false;
-                            }
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top - $('#navbar').outerHeight()
+                            }, 1000);
+                            return false;
                         }
-                    });
+                    }
                 });
-
-
 
             });
         </script>
