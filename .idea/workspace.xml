@@ -3555,11 +3555,9 @@
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\html5up-prologue\js\skel-panels.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\html5up-prologue\js\skel.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\test.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PartnerProject/assessments.html" afterPath="$PROJECT_DIR$/PartnerProject/assessments.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/assets/css/custom.css" afterPath="$PROJECT_DIR$/klatt/assets/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/index.html" afterPath="$PROJECT_DIR$/klatt/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PartnerProject/profile.html" afterPath="$PROJECT_DIR$/PartnerProject/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MaxPrimoMershon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -3585,11 +3583,15 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/klatt/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53636366" vertical-offset="708" max-vertical-offset="2125">
-              <caret line="79" column="468" selection-start-line="79" selection-start-column="468" selection-end-line="79" selection-end-column="468" />
+            <state vertical-scroll-proportion="0.49818182" vertical-offset="355" max-vertical-offset="1615">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -3598,8 +3600,8 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/klatt/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1632">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="1734">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -4080,19 +4082,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/klatt/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1632">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="1734">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/klatt/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53636366" vertical-offset="708" max-vertical-offset="2125">
-          <caret line="79" column="468" selection-start-line="79" selection-start-column="468" selection-end-line="79" selection-end-column="468" />
+        <state vertical-scroll-proportion="0.49818182" vertical-offset="355" max-vertical-offset="1615">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>

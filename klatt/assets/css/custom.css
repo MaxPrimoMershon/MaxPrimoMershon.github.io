@@ -1,5 +1,5 @@
-.top-cushion{
-    margin-top:75px;
+body{
+    color:#000051;
 }
 
 .navbar{
@@ -40,6 +40,10 @@ footer{
     height: 450px;
 }
 
+#intro .container{
+    margin-top: 75px;
+}
+
 #intro .jumbotron{
     background-color: rgba(167,167,184,.7);
     margin-top: 20px;
@@ -70,7 +74,9 @@ footer{
     padding-bottom: 20px;
 }
 
-
+.footer .container{
+    margin-bottom: 10px;
+}
 
 /*Fluid Video*/
 .videoWrapper {
