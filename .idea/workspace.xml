@@ -3542,13 +3542,11 @@
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\html5up-prologue\js\skel-panels.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\html5up-prologue\js\skel.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Max\Documents\GitHub\MaxPrimoMershon.github.io\test.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/earlybird.png" afterPath="$PROJECT_DIR$/assets/img/earlybird.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PartnerProject/assessments.html" afterPath="$PROJECT_DIR$/PartnerProject/assessments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/candidates.html" afterPath="$PROJECT_DIR$/klatt/candidates.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/clients.html" afterPath="$PROJECT_DIR$/klatt/clients.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/custom-portfolio.css" afterPath="$PROJECT_DIR$/assets/css/custom-portfolio.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/assets/css/custom.css" afterPath="$PROJECT_DIR$/klatt/assets/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/index.html" afterPath="$PROJECT_DIR$/klatt/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klatt/music.html" afterPath="$PROJECT_DIR$/klatt/music.html" />
     </list>
     <ignored path="MaxPrimoMershon.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -3571,26 +3569,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/klatt/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49818182" vertical-offset="457" max-vertical-offset="2380">
-              <caret line="72" column="213" selection-start-line="72" selection-start-column="213" selection-end-line="72" selection-end-column="213" />
+            <state vertical-scroll-proportion="-12.961538" vertical-offset="377" max-vertical-offset="1003">
+              <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
               <folding>
-                <element signature="tag#nav#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#section#1;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#section#2;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#script#5;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-portfolio.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/custom-portfolio.css">
+      <file leaf-file-name="clients.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/klatt/clients.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5270">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state vertical-scroll-proportion="-12.5" vertical-offset="729" max-vertical-offset="1343">
+              <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+              <folding>
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidates.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/klatt/candidates.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6923077" vertical-offset="440" max-vertical-offset="1054">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="63" selection-end-column="10" />
+              <folding>
+                <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="music.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/klatt/music.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38545454" vertical-offset="383" max-vertical-offset="1258">
+              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+              <folding>
+                <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/klatt/assets/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="1785">
+              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -3625,17 +3671,17 @@
         <option value="$PROJECT_DIR$/PartnerProject/style.css" />
         <option value="$PROJECT_DIR$/PartnerProject/index.html" />
         <option value="$PROJECT_DIR$/PartnerProject/EB_landingpage-master/index.html" />
-        <option value="$PROJECT_DIR$/klatt/music.html" />
-        <option value="$PROJECT_DIR$/klatt/candidates.html" />
         <option value="$PROJECT_DIR$/PartnerProject/dashboard-style.css" />
         <option value="$PROJECT_DIR$/PartnerProject/basicinformation.html" />
         <option value="$PROJECT_DIR$/PartnerProject/profile.html" />
-        <option value="$PROJECT_DIR$/klatt/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/klatt/index.html" />
-        <option value="$PROJECT_DIR$/klatt/clients.html" />
         <option value="$PROJECT_DIR$/PartnerProject/assessments.html" />
         <option value="$PROJECT_DIR$/assets/css/custom-portfolio.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/klatt/candidates.html" />
+        <option value="$PROJECT_DIR$/klatt/clients.html" />
+        <option value="$PROJECT_DIR$/klatt/index.html" />
+        <option value="$PROJECT_DIR$/klatt/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/klatt/music.html" />
       </list>
     </option>
   </component>
@@ -3699,7 +3745,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="klatt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3713,11 +3759,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="klatt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3968,20 +4014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/klatt/candidates.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8978102" vertical-offset="800" max-vertical-offset="1700">
-          <caret line="111" column="24" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/klatt/music.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.124087594" vertical-offset="255" max-vertical-offset="1581">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PartnerProject/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3076925" vertical-offset="321" max-vertical-offset="1258">
@@ -3993,34 +4025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3090909" vertical-offset="748" max-vertical-offset="5457">
           <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/klatt/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.653846" vertical-offset="1014" max-vertical-offset="1564">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/klatt/clients.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5168739" vertical-offset="780" max-vertical-offset="1377">
-          <caret line="149" column="12" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="12" />
-          <folding>
-            <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/klatt/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63497454" vertical-offset="544" max-vertical-offset="1819">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -4079,15 +4083,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23978686" vertical-offset="562" max-vertical-offset="2669">
           <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/custom-portfolio.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5270">
+        <state vertical-scroll-proportion="0.23089983" vertical-offset="0" max-vertical-offset="5270">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
@@ -4095,13 +4097,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49818182" vertical-offset="457" max-vertical-offset="2380">
-          <caret line="72" column="213" selection-start-line="72" selection-start-column="213" selection-end-line="72" selection-end-column="213" />
+        <state vertical-scroll-proportion="0.38181818" vertical-offset="2255" max-vertical-offset="2856">
+          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
           <folding>
             <element signature="tag#nav#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#1;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#section#2;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#script#5;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/klatt/candidates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6923077" vertical-offset="440" max-vertical-offset="1054">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="63" selection-end-column="10" />
+          <folding>
+            <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/klatt/clients.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="729" max-vertical-offset="1343">
+          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+          <folding>
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/klatt/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.961538" vertical-offset="377" max-vertical-offset="1003">
+          <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
+          <folding>
+            <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/klatt/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="1785">
+          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/klatt/music.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38545454" vertical-offset="383" max-vertical-offset="1258">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+          <folding>
+            <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
