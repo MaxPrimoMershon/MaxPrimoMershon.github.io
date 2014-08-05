@@ -40,13 +40,18 @@ footer{
     height: 450px;
 }
 
+/*Stopped Review Here*/
+
 #intro .container{
-    margin-top: 75px;
+    margin-top: 95px;
+}
+
+#overview .container{
+    margin-top: 95px;
 }
 
 #intro .jumbotron{
     background-color: rgba(167,167,184,.7);
-    margin-top: 20px;
     color:#000051;
 }
 
