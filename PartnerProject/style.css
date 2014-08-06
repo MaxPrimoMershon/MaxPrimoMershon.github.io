@@ -1,3 +1,7 @@
+body{
+    background-image: linear-gradient( rgb(20,92,143) 0%, rgb(0,152,214) 100%);
+}
+
 .container>h1{
     margin-top: 70px;
     margin-bottom: 20px;
@@ -9,4 +13,64 @@
     border-width: 5px;
     padding: 10px;
     border-radius: 50%;
+}
+
+input[type=checkbox].css-checkbox {
+    display:none;
+}
+
+input[type=checkbox].css-checkbox + label.css-checkboxlabel {
+    padding-left:27px;
+    height:22px;
+    display:inline-block;
+    line-height:22px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:14px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-checkboxlabel {
+    background-position: 0 -22px;
+}
+label.css-checkboxlabel {
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_4da3b5b298edb587858b1e6176b0c7d5.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=radio].css-radio {
+    display:none;
+}
+
+input[type=radio].css-radio + label.css-radiolabel {
+    padding-left:27px;
+    height:22px;
+    display:inline-block;
+    line-height:22px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:14px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=radio].css-radio:checked + label.css-radiolabel {
+    background-position: 0 -22px;
+}
+label.css-radiolabel {
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_7140f97e96e2bbe46d72f09d7f4d2627.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
