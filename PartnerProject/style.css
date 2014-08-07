@@ -18,6 +18,9 @@ body {
     border-radius: 0%;
 }
 
+.form-control{
+    border-radius: 0px;
+}
 .assessment-img{
     height: 150px;
     padding: 10px;
