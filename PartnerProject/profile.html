@@ -20,297 +20,163 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
 
-    <!--Navbar-->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="assessments.html"><span class="glyphicon glyphicon-pencil"></span> Assessments</a></li>
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div>
-    </div>
-
-    <!--Main Container-->
+<!--Navbar-->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <h1 class="text-center">Startup Name</h1>
-
-        <!--Registration Form-->
-        <div class="row">
-
-                <form id="registrationForm" method="post" class="form-horizontal">
-
-                    <!--Elevator pitch-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Elevator Pitch:</label>
-                        <div class="col-lg-6">
-                            <textarea class="form-control" rows="2" name="elevatorPitch"></textarea>
-                        </div>
-                    </div>
-                    
-                    <!--Problem-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Problem:</label>
-                        <div class="col-lg-6">
-                            <textarea class="form-control" rows="2" name="problem"></textarea>
-                        </div>
-                    </div>
-
-                    <!--Solution-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Solution:</label>
-                        <div class="col-lg-6">
-                            <textarea class="form-control" rows="2" name="solution"></textarea>
-                        </div>
-                    </div>
-                    
-                    <!--Industry-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Industry:</label>
-                        <div class="col-lg-3">
-                            <select class="form-control" name="industry" required>
-                              <option value="">-- Select an industry --</option>
-                              <option value="edtech">Ed Tech</option>
-                              <option value="fintech">Fin Tech</option>
-                              <option value="healthcare">Healthcare</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!--Location-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">City:</label>
-                        <div class="col-lg-3">
-                            <input type="text" class="form-control" name="city" placeholder="City" />
-                        </div>
-                        <label class="col-lg-1 control-label">State:</label>
-                        <div class="col-lg-2">
-                            <input type="text" class="form-control" name="state" placeholder="State" />
-                        </div>
-                    </div>
-
-                    <!--Country-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Country:</label>
-                        <div class="col-lg-3">
-                            <select class="form-control" name="country" required>
-                                <option value="">-- Select a country --</option>
-                                <option value="fr">France</option>
-                                <option value="de">Germany</option>
-                                <option value="it">Italy</option>
-                                <option value="jp">Japan</option>
-                                <option value="ru">Russia</option>
-                                <option value="gb">United Kingdom</option>
-                                <option value="us">United State</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!--Founders-->
-                    <div class="form-group">
-                            <label class="col-lg-3 control-label">Founder(s):</label>
-                            <div class="col-lg-9">
-                                <input class="btn btn-success" type="button" value="Add" id="addFounder">
-                            </div>
-                        <div id="containerFounder"></div>
-                    </div>
-
-                    <!--Advisors-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Advisor(s):</label>
-                        <div class="col-lg-9">
-                            <input class="btn btn-success" type="button" value="Add" id="addAdvisor">
-                        </div>
-                        <div id="containerAdvisor"></div>
-                    </div>
-
-                    <!--Investors-->
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Investor(s):</label>
-                        <div class="col-lg-9">
-                            <input class="btn btn-success" type="button" value="Add" id="addInvestor">
-                        </div>
-                        <div id="containerInvestor"></div>
-                    </div>
-
-                    <!--Submit Form-->
-                    <div class="form-group">
-                        <div class="col-lg-4 col-lg-offset-8">
-                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
-                        </div>
-                    </div>
-                    
-                </form>
-
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
         </div>
-
-        <hr>
-        
-        <!-- Site footer -->
-        <div class="footer">
-            <p>© Partner Project 2014</p>
-        </div>
-        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="assessments.html"><span class="glyphicon glyphicon-pencil"></span> Assessments</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
+</div>
+
+<!--Main Container-->
+<div class="container">
+    <h1 class="text-center">Startup Name</h1>
+
+    <!--Registration Form-->
+    <div class="row">
+
+        <div class="panel panel-default col-md-8 col-md-offset-2" style="background-color: rgb(231,231,231); border-color: rgb(16, 57, 81)">
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <form id="registrationForm" method="post" class="form-horizontal">
+
+                        <!--Elevator pitch-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Elevator Pitch:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+
+                        <!--Problem-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Problem:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+
+                        <!--Solution-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Solution:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+
+                        <!--Industry-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Industry:</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">Lorem ipsum</p>
+                            </div>
+                        </div>
+
+                        <!--Location-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">City:</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static">Lorem ipsum</p>
+                            </div>
+                            <label class="col-md-1 control-label">State:</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static">Lorem ipsum</p>
+                            </div>
+                        </div>
+
+                        <!--Country-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Country:</label>
+                            <div class="col-md-4">
+                                <p class="form-control-static">Lorem ipsum</p>
+                            </div>
+                        </div>
+
+                        <!--Founders-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Founder(s):</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">FirstName LastName</p>
+                                <p class="form-control-static">FirstName LastName</p>
+                                <p class="form-control-static">FirstName LastName</p>
+                            </div>
+                            <div id="containerFounder"></div>
+                        </div>
+
+                        <!--Advisors-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Advisor(s):</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">FirstName LastName</p>
+                                <p class="form-control-static">FirstName LastName</p>
+                            </div>
+                            <div id="containerAdvisor"></div>
+                        </div>
+
+                        <!--Investors-->
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Investor(s):</label>
+                            <div class="col-md-9">
+                                <p class="form-control-static">FirstName LastName</p>
+                            </div>
+                            <div id="containerInvestor"></div>
+                        </div>
+
+                        <!--Submit Form-->
+                        <div class="form-group">
+                            <div class="col-md-3 col-md-offset-9">
+                                <button type="submit" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Site footer -->
+    <div class="footer">
+        <p>© Partner Project 2014</p>
+    </div>
+
+</div>
+<!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/bootstrapValidator.min.js"></script>
-    <script>
-        $(document).ready(function() {
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
-            //Add Founder
-            $('#addFounder').bind('click', function() {
-                if($('#containerFounder').find('input').length < 8) {
-                    $('#containerFounder').append('<div>' +
-                                                '<div class="col-lg-3 col-lg-offset-3">' +
-                                                    '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
-                                                '</div>' +
-                                                '<div class="col-lg-3">' +
-                                                    '<input type="text" class="form-control" name="lastName" placeholder="Last Name" required />' +
-                                                '</div>' +
-                                                '<button class="btn btn-danger removeFounder" type="submit">Remove</button>' +
-                                            '</div>');
-                }
-            });
-
-            //Remove Founder
-            $('body').on('click', '.removeFounder', function() {
-                if($('#containerFounder').find('input').length > 0) {
-                    $(this).parent().remove();
-                }
-            });
-
-            //Add Advisor
-            $('#addAdvisor').bind('click', function() {
-                if($('#containerAdvisor').find('input').length < 8) {
-                    $('#containerAdvisor').append('<div>' +
-                            '<div class="col-lg-3 col-lg-offset-3">' +
-                            '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
-                            '</div>' +
-                            '<div class="col-lg-3">' +
-                            '<input type="text" class="form-control" name="lastName" placeholder="Last Name" required />' +
-                            '</div>' +
-                            '<button class="btn btn-danger removeAdvisor" type="submit">Remove</button>' +
-                            '</div>');
-                }
-            });
-
-            //Remove Advisor
-            $('body').on('click', '.removeAdvisor', function() {
-                if($('#containerAdvisor').find('input').length > 0) {
-                    $(this).parent().remove();
-                }
-            });
-
-            //Add Investor
-            $('#addInvestor').bind('click', function() {
-                if($('#containerInvestor').find('input').length < 8) {
-                    $('#containerInvestor').append('<div>' +
-                            '<div class="col-lg-3 col-lg-offset-3">' +
-                            '<input type="text" class="form-control" name="firstName" placeholder="First Name" required />' +
-                            '</div>' +
-                            '<div class="col-lg-3">' +
-                            '<input type="text" class="form-control" name="lastName" placeholder="Last Name" required />' +
-                            '</div>' +
-                            '<button class="btn btn-danger removeInvestor" type="submit">Remove</button>' +
-                            '</div>');
-                }
-            });
-
-            //Remove Investor
-            $('body').on('click', '.removeInvestor', function() {
-                if($('#containerInvestor').find('input').length > 0) {
-                    $(this).parent().remove();
-                }
-            });
-
-            //Form Validation
-            $('#registrationForm').bootstrapValidator({
-                message: 'This value is not valid',
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    elevatorPitch: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The elevator pitch is required and cannot be empty'
-                            }
-                        }
-                    },
-                    problem: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The problem is required and cannot be empty'
-                            }
-                        }
-                    },
-                    solution: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The solution is required and cannot be empty'
-                            }
-                        }
-                    },
-                    industry: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The industry is required and cannot be empty'
-                            }
-                        }
-                    },
-                    city: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The city is required and cannot be empty'
-                            }
-                        }
-                    },
-                    state: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The state is required and cannot be empty'
-                            }
-                        }
-                    },
-                    country: {
-                        validators: {
-                            notEmpty: {
-                                message: 'The country is required and cannot be empty'
-                            }
-                        }
-                    }
-                }
-            });
-
-        });
-    </script>
 </body>
 
 </html>
