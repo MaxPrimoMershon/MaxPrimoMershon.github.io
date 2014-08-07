@@ -1,12 +1,30 @@
-/*Start 8/7/14 Work*/
+body {
+    color: rgb(16, 57, 81);
+    background-color: #2884c5;
+}
 
+.container>h1{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.panel {
+    /*background-color: rgba(16, 57, 81,0.4);*/
+    background-color: #1e6394;
+    border-radius: 0%;
+}
+
+.btn{
+    border-radius: 0%;
+}
+
+.assessment-img{
+    height: 150px;
+    padding: 10px;
+}
 @font-face {
     font-family: AdelleBasic_Bold;
     src: url(font/AdelleBasic_Bold.otf);
-}
-
-h1,h2,h3 {
-    font-family: AdelleBasic_Bold;
 }
 
 @font-face {
@@ -14,48 +32,18 @@ h1,h2,h3 {
     src: url(font/AdelleSans-Regular.otf);
 }
 
+h1,h2,h3,h4 {
+    font-family: AdelleBasic_Bold;
+    color: rgb(231,231,231);
+}
+
 h4,h5,p,a,label {
     font-family: AdelleSans-Regular;
+    color: rgb(231,231,231);
 }
 
-.panel {
-    background-color: rgba(16, 57, 81,0.4);
-    min-height: 320px;
-}
 
-/*End 8/7/14 Work*/
-
-
-.container>h1{
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-
-.assessment-img{
-    height: 150px;
-    padding: 10px;
-    /*border-style: solid;*/
-    /*border-width: 5px;*/
-    /*border-radius: 50%;*/
-}
-
-.quiz img{
-    background-color: rgb(0, 136, 191);
-}
-
-body, .quiz img {
-    color: rgb(16, 57, 81);
-
-    background: #1e5799; /* Old browsers */
-    background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-
-}
+/*Radio buttons and Checkboxes*/
 
 input[type=checkbox].css-checkbox {
     display:none;
