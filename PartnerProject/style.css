@@ -12,6 +12,7 @@ body {
     /*background-color: rgba(16, 57, 81,0.4);*/
     background-color: #1e6394;
     border-radius: 0%;
+    min-height: 280px;
 }
 
 .btn{
@@ -25,6 +26,12 @@ body {
     height: 150px;
     padding: 10px;
 }
+
+
+.incomplete-assessment-img{
+    margin-top: 30px;
+}
+
 @font-face {
     font-family: AdelleBasic_Bold;
     src: url(font/AdelleBasic_Bold.otf);
