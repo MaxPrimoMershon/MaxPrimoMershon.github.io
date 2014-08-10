@@ -22,6 +22,19 @@ body{
     color: #000051;
 }
 
+#phoneNumber{
+    height: 40px;
+    margin-top: 15px;
+    padding-top: 10px; 
+}
+
+#download-timesheet{
+    height: 40px;
+    margin: 15px;
+    padding-top: 10px; 
+}
+
+
 .blockquote-footer{
     color: #000051;
 }
@@ -85,18 +98,6 @@ body div.intro section:first-child{
     background-color: #1D1F4B;
     color:white;
     padding-bottom: 20px;
-}
-
-#phoneNumber{
-    height: 40px;
-    margin-top: 15px;
-    padding-top: 10px; 
-}
-
-#download-timesheet{
-    height: 40px;
-    margin: 15px;
-    padding-top: 10px; 
 }
 
 /*Fluid Video*/

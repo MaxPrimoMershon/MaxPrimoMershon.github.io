@@ -20,7 +20,7 @@ section h1 {
 	height:650px;
 }
 
-#intro blockquote{
+#intro .panel{
     margin: 70px auto auto auto;
     background-color: rgba(16,16,16,.5);
     color: white;
@@ -34,6 +34,9 @@ section h1 {
 
 
 /*Project*/
+#projects{
+    background-color: rgb(230,230,230);
+}
 
 #projects h4{
     margin-bottom: 0px;
@@ -45,12 +48,10 @@ section h1 {
     margin: -20px 0px 0px 0px;
     padding: auto 0px;
 }
-#css3, #html5, #js {
-    width: 15%;
-}
 
-#jquery{
-    width: 45%;
+.img-projects{
+    margin-bottom: 20px; 
+        
 }
 
 /*End Project*/
@@ -59,7 +60,13 @@ section h1 {
 /*Experiments*/
 
 #experiments{
-    background-color: rgb(200, 200, 198);
+    background-color: rgb(230,230,230);
+    padding-bottom: 20px;
+}
+
+#experiments img{
+    height: 275px;
+    margin-bottom: 20px;
 }
 
 /*Fluid Video*/
@@ -68,6 +75,7 @@ section h1 {
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
+    margin-bottom: 20px;
 }
 .videoWrapper iframe {
     position: absolute;
