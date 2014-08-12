@@ -1,0 +1,64 @@
+#summary{
+/*    background-color: ;*/
+}
+
+#benefits{
+    background-color: yellow;
+    padding-bottom: 20px;
+}
+
+#benefits h1{
+    margin: 20px;
+}
+
+#benefits img{
+    height: 100px;
+}
+
+#read, #watch, #test{
+    margin: 0px;
+    padding-top: 50px;
+    color:black;
+}
+
+#learnMore h1{
+    margin: 0px;
+    padding: 20px;
+}
+
+#learnMore img{
+    height: 150px;
+}
+
+#read{
+    background-color: red;
+        float:left;
+    width: 33.3%;
+    height: 300px;
+}
+
+#watch{
+    background-color: green;
+    float:left;
+    width: 33.3%;
+    height: 300px;
+}
+
+#test{
+    background-color: blue;
+        float:left;
+    width: 33.4%;
+    height: 300px;
+}
+
+#readSummary img{
+    height:150px;
+}
+
+.img-height{
+    height:75px;
+}
+
+.thumbnail{
+    height: 300px;
+}

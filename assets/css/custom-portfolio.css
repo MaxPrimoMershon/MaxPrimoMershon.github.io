@@ -26,6 +26,10 @@ section h1 {
     color: white;
 }
 
+#intro .panel h2{
+    margin-top: 10px;
+}
+
 #intro a i{
     margin-top: 30px;
     margin-left:45%;
