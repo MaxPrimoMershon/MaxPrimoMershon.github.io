@@ -11,10 +11,10 @@
         <title>Max Mershon</title>
 
         <!--Font Awesome Icons-->
-        <link href="assets/icons/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
-        <!--Bootstrap CSS-->
-        <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
         <!--Custom CSS-->
         <link href="assets/css/custom-portfolio.css" type="text/css" rel="stylesheet">
@@ -34,7 +34,7 @@
 
             <div class="row">
 
-                <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
                     <div class="container-fluid" id="navbar-scroll">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header mobile-nav">
@@ -133,7 +133,7 @@
                                     <p><small class="text-muted">July 2012 - May 2014</small></p>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>I first became interested in front end development when I joined Accenture during the Java application training that all new analysts took. As part of the training we had to create an event registration application. While the primary focus of the training was on Java, I was more interested in developing the front end of the application. I started learning HTML, CSS and Javascript on my own outside of work for the next two years at Accenture.</p>
+                                    <p>I first became interested in front end development when I joined Accenture during the Java application training I took. As part of the training we had to create an event registration application. While the primary focus of the training was on Java, I was more interested in developing the front end of the application. I started learning HTML, CSS and Javascript on my own outside of work for the next two years at Accenture.</p>
                                     <p>After the Java training, I joined my first project as a business analyst. While my main responsibility was to create requirements for a web application, I again found myself wanting to design/build the front end of the application I was creating requirements for, so I started working closely with the UX and development teams.</p>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@
                                     <p><small class="text-muted">Summer 2014</small></p>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>I left Accenture to enroll in the Product &amp Design track at SIC so I could pursue a job as a front end developer at a startup. At SIC I am not only gaining technical skills in the latest front end technologies, such as HTML5, CSS3, jQuery, and Twitter Bootstrap, but I am also developing the soft skills needed to become a valuable employee at a startup.</p>
+                                    <p>I left Accenture to enroll in the Product &amp Design track at SIC so I could pursue a job as a front end developer at a startup. At SIC, I am not only gaining technical skills in the latest front end technologies, such as HTML5, CSS3, jQuery, and Twitter Bootstrap, but I am also developing the soft skills needed to become a valuable employee at a startup.</p>
                                 </div>
                             </div>
                         </li>
@@ -158,7 +158,7 @@
                     </ul>
 
                 </section>
-                
+
                 <!--Projects-->
                 <section id="projects" class="col-md-12">
                     <h1 class="text-center">Projects</h1>
@@ -166,28 +166,73 @@
                     <div class="row">
 
                         <!--Earlybird-->
-                        <div class="col-md-3 fade-it-earlybird">
-                            <img src="assets/img/earlybird_desktop_tablet_mobile.jpg" alt="Earlybird" class="img-responsive img-projects">
+                        <div class="fade-it-earlybird" id="earlybird">
+                            <div class="col-sm-3">
+                                <img src="assets/img/earlybird_desktop_tablet_mobile.jpg" alt="Earlybird" class="img-responsive img-projects center-block">
+                            </div>
+                            <div class="col-sm-3">
+                                <h3>Earlybird MVP</h3>                            
+                                <p>Designed and developed the UI for a minimal viable product for a web application for Earlybird, which is a design/dev shop for startups in Chicago. Used HTML, CSS, jQuery, and Bootstrap to create the MVP.</p>
 
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal_1">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                More information coming soon...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
                         </div>
-                        <div class="col-md-3">
-                            <h3>Earlybird MVP</h3>                            
-                            <p>Using HTML, CSS, jQuery, and Bootstrap to create a minimal viable product for a web application for Earlybird, a Chicago based design/dev shop.</p>
-                        </div>
+
 
                         <!--Klatt-->
-                        <div class="col-md-3 fade-it-earlybird">
-                            <img src="assets/img/klatt_desktop_mobile.jpg" alt="Klatt" class="img-responsive img-projects">
+                        <div class="fade-it-klatt" id="klatt">
+                            <div class="col-sm-3">
+                                <img src="assets/img/klatt_desktop_mobile.jpg" alt="Klatt" class="img-responsive img-projects center-block">
+                            </div>
+                            <div class="col-sm-3">
+                                <h3>Klatt Website Redesign</h3>
+                                <p>Redesigned a marketing website for Klatt Temporary Service, which is a temp staffing agency based in Chicago. Used HTML, CSS, and Bootstrap for the redesign.</p>
+
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal_2">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                More information coming soon...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
                         </div>
-                        <div class="col-md-3">
-                            <h3>Klatt Website Redesign</h3>
-                            <p>Using HTML, CSS, and Bootstrap to redesign the website for Klatt, which is a temporary employment services firm.</p>
-                        </div>
+
 
                     </div>
 
                 </section>
-                
+
                 <!--Experiments-->
                 <section id="experiments" class="col-md-12">
                     <h1 class="text-center">Experiments</h1>
@@ -195,31 +240,50 @@
 
                         <!--VICE Maps-->
                         <div class="col-sm-4 fade-it-vice">
-                            <img src="assets/img/vicemaps_laptop_2.jpg" class="img-responsive center-block">
-                            <i class="fa fa-globe fa-4x pull-left"></i>
-                            <h3> "VICE Maps"</h3>
+                            <div class="experiments-panel">
+                                <div class="experiments-heading">
+                                    <a href="http://maxprimomershon.com/VICE-guide-to-travel/index_v0.3.3.html">
+                                        <img src="assets/img/vicemaps.png" class="img-thumbnail img-responsive center-block">
+                                    </a>
+                                    <hr>
+                                    <h4 class="experiments-title"><i class="fa fa-code"></i> "VICE Maps"</h4>
+                                </div>
+                                <div class="experiments-body">
+                                    <p>Designed and developed an interactive dashboard of VICE documentaries using HTML, CSS, JavaScript, and a few Google APIs.</p>
+                                </div>
+                            </div>
                         </div>
 
                         <!--Achieving Success through Failure-->
                         <div class="col-sm-4 fade-it-youtube">
-                            <div class="videoWrapper">
-                                <iframe width="560" height="400" src="http://www.youtube.com/embed/NfAV3BGXF7c?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                            <div class="experiments-panel">
+                                <div class="experiments-heading">
+                                    <div class="videoWrapper">
+                                        <iframe width="560" height="400" src="http://www.youtube.com/embed/NfAV3BGXF7c?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <hr>
+                                    <h4 class="experiments-title"><i class="fa fa-film"></i> "Achieving Success through Failure"</h4>
+                                </div>
+                                <div class="experiments-body">
+                                    <p>Created a video compilation using Adobe Premiere of successful individuals speak on their personal failures.</p>
+                                </div>
                             </div>
-                            <i class="fa fa-film fa-4x center-block"></i>
-                            <h3>"Achieving Success through Failure"</h3>
-
-
                         </div>
 
                         <!--2 Degrees Blog Post-->
                         <div class="col-sm-4 fade-it-tdpost">
-                            <a href="http://twodegreesfood.com/2012/05/inspiring-change/">
-                                <img src="assets/img/twodegreesblog.png" class="img-thumbnail img-responsive center-block">
-                            </a>
-                            <div class="center-block">
-                                <i class="fa fa-pencil fa-4x"></i><h3 class="center-text">  "Inspiring Change"</h3>
+                            <div class="experiments-panel">
+                                <div class="experiments-heading">
+                                    <a href="http://twodegreesfood.com/2012/05/inspiring-change/">
+                                        <img src="assets/img/twodegreesblog.png" class="img-thumbnail img-responsive center-block">
+                                    </a>
+                                    <hr>
+                                    <h4 class="experiments-title"><i class="fa fa-pencil"></i> "Inspiring Change"</h4>
+                                </div>
+                                <div class="experiments-body">
+                                    <p>Wrote a post on Two Degrees' main blog using Simon Sinek's "Start With Why" leadership philosophy to describe the company's mission.</p>
+                                </div>
                             </div>
-
                         </div>
 
                     </div>
@@ -238,9 +302,8 @@
         <!-- jQuery -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-        <!-- Bootstrap Navbar Collapse effect-->
-        <script type="text/javascript" src="assets/js/collapse.js"></script>
-        <script type="text/javascript" src="assets/js/scrollspy.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
         <!-- Superscollorama plugins-->
         <script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
@@ -253,17 +316,18 @@
                 var controller = $.superscrollorama();
                 //insert addTween method to fade in elements
 
+                controller.addTween('.fade-it-uiuc', TweenMax.from( $('.fade-it-uiuc'), .25, {css:{right:'1000px'}, ease:Quad.easeInOut}),0,-200);
+                controller.addTween('.fade-it-tdcd', TweenMax.from( $('.fade-it-tdcd'), .25, {css:{left:'1000px'}, ease:Quad.easeInOut}),0,-200);
+                controller.addTween('.fade-it-accenture', TweenMax.from( $('.fade-it-accenture'), .25, {css:{right:'1000px'}, ease:Quad.easeInOut}),0,-200);
+                controller.addTween('.fade-it-sic', TweenMax.from( $('.fade-it-sic'), .25, {css:{left:'1000px'}, ease:Quad.easeInOut}),0,-200);
+
+
                 controller.addTween('.fade-it-earlybird', TweenMax.from( $('.fade-it-earlybird'),2, {css:{opacity: 0}}),0,-150);
                 controller.addTween('.fade-it-klatt', TweenMax.from( $('.fade-it-klatt'),2, {css:{opacity: 0}}),0,-150);
 
                 controller.addTween('.fade-it-vice', TweenMax.from( $('.fade-it-vice'),2, {css:{opacity: 0}}),0,-225);
                 controller.addTween('.fade-it-youtube', TweenMax.from( $('.fade-it-youtube'),2, {css:{opacity: 0}}),0,-225);
                 controller.addTween('.fade-it-tdpost', TweenMax.from( $('.fade-it-tdpost'),2, {css:{opacity: 0}}),0,-225);
-
-                controller.addTween('.fade-it-sic', TweenMax.from( $('.fade-it-sic'),2, {css:{opacity: 0}}),0,-200);
-                controller.addTween('.fade-it-accenture', TweenMax.from( $('.fade-it-accenture'),2, {css:{opacity: 0}}),0,-200);
-                controller.addTween('.fade-it-uiuc', TweenMax.from( $('.fade-it-uiuc'),2, {css:{opacity: 0}}),0,-200);
-                controller.addTween('.fade-it-tdcd', TweenMax.from( $('.fade-it-tdcd'),2, {css:{opacity: 0}}),0,-200);
 
                 //Smooth Scrolling
                 $('a[href*=#]:not([href=#])').click(function() {

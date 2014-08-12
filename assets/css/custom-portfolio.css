@@ -10,20 +10,25 @@ section h1 {
     margin-top: 10px;
 }
 
+footer{
+    margin-top: 10px;
+}
+
 
 /*Intro*/
 
 #intro{
-	background-size: cover;
-	background-image: url(https://googledrive.com/host/0B8twAiT8iwUZNnBxVjFFcnduNkk/);
+    background-size: cover;
+    background-image: url(https://googledrive.com/host/0B8twAiT8iwUZNnBxVjFFcnduNkk/);
     background-attachment: fixed;
-	height:650px;
+    height:650px;
 }
 
 #intro .panel{
     margin: 70px auto auto auto;
     background-color: rgba(16,16,16,.5);
     color: white;
+    border: none;
 }
 
 #intro .panel h2{
@@ -35,65 +40,13 @@ section h1 {
     margin-left:45%;
     color: rgba(16,16,16,.5);
 }
+/*End Intro*/
 
-
-/*Project*/
-#projects{
-    background-color: rgb(230,230,230);
-}
-
-#projects h4{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-.skills img{
-    display: inline;
-    margin: -20px 0px 0px 0px;
-    padding: auto 0px;
-}
-
-.img-projects{
-    margin-bottom: 20px; 
-        
-}
-
-/*End Project*/
-
-
-/*Experiments*/
-
-#experiments{
-    background-color: rgb(230,230,230);
-    padding-bottom: 20px;
-}
-
-#experiments img{
-    height: 275px;
-    margin-bottom: 20px;
-}
-
-/*Fluid Video*/
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-    margin-bottom: 20px;
-}
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-/*End Fluid Video*/
 
 /*My Story*/
 
 #mystory{
-    background-color: rgb(200, 200, 198);
+    background-color: grey;
 }
 
 #mystory h1{
@@ -123,12 +76,97 @@ section h1 {
 
 /*End My Story*/
 
+
+/*Start Project*/
+#projects{
+    background-color: rgb(230,230,230);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#projects h1{
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.img-projects{
+    margin-bottom: 20px; 
+}
+
+#earlybird button{
+    margin-bottom: 20px;
+}
+
+#klatt button{
+    margin-bottom: 20px;
+}
+
+/*End Project*/
+
+
+/*Start Experiments*/
+
+#experiments{
+    background-color: grey;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+#experiments h1{
+    margin-top: 0px;
+    padding-top: 20px;
+
+}
+
+.experiments-panel{
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.fade-it-vice{
+    margin-bottom: 20px;
+}
+
+.fade-it-youtube{
+    margin-bottom: 20px;    
+}
+
+.fade-it-tdpost{
+    margin-bottom: 20px;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 20px;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*End Experiments*/
+
+
 /*Start Timeline*/
 
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+    margin-bottom: 0px;
 }
 
 .timeline:before {
@@ -137,7 +175,7 @@ section h1 {
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #eeeeee;
+    background-color: white;
     left: 50%;
     margin-left: -1.5px;
 }
@@ -304,12 +342,3 @@ section h1 {
 }
 
 /*End Timeline*/
-
-
-/*Footer*/
-
-footer{
-    margin-top: 10px;
-}
-
-/*End Footer*/
