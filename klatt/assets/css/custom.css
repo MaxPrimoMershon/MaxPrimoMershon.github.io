@@ -15,7 +15,6 @@ body div.intro section:first-child{
 }
 
 
-
 /*Start Navbar*/
 .navbar{
     height: 75px;
@@ -54,13 +53,46 @@ body div.intro section:first-child{
 
 #download-timesheet{
     height: 40px;
+    width:200px;
     margin: 15px;
     padding-top: 10px; 
     color: #000051;
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
     .navbar-collapse li a{
         height:40px;
         padding-top:10px;
@@ -76,7 +108,6 @@ body div.intro section:first-child{
         height: 40px;
         margin-top: 0px;
     }
-
 }
 /*End Navbar*/
 

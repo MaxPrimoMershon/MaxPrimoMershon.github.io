@@ -207,30 +207,15 @@
                     </div>
                     <div class="col-md-6">
                         <h3 class="text-center">Submit a Work Request</h3>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Company Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Start Date: MM/DD/YYYY">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="End Date: MM/DD/YYYY">
-                            </div>
-                            <button type="submit" class="btn btn-success">Submit Request</button>
-                        </form>
+                        <p>If you are interested in hiring a Klatt employee, please send us an email at info@klattemployment.com with the following information:</p>
+                        <ol>
+                            <li>Company name</li>
+                            <li>Company address</li>
+                            <li>Name of hiring manager</li>
+                            <li>Phone number</li>
+                            <li>Type of work</li>
+                            <li>Work start and end date</li>
+                        </ol>
                     </div>
                 </div>
             </section>
@@ -250,5 +235,13 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+            $('#monitor').html($(window).width());
+
+            $(window).resize(function() {
+                var viewportWidth = $(window).width();
+                $('#monitor').html(viewportWidth);
+            });
+        </script>
     </body>
 </html>
