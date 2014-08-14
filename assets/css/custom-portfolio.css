@@ -47,6 +47,7 @@ footer{
 
 #mystory{
     background-color: grey;
+    overflow: hidden;
 }
 
 #mystory h1{
