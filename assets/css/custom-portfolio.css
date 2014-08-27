@@ -343,3 +343,14 @@ footer{
 }
 
 /*End Timeline*/
+
+
+/*Earlybird Overview*/
+#overview{
+    margin-top: 50px;
+}
+
+#overview .thumbnail{
+    background-color: rgb(230,230,230);
+    min-height: 417px;
+}
