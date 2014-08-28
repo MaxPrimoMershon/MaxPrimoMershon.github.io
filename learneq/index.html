@@ -15,9 +15,6 @@
         <!--Custom CSS-->
         <link href="style.css" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
-        <style>body{padding-top:50px;}</style>
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -26,92 +23,210 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+        <header>
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">learn EQ</a>
+                <div class="row">
+                    <h1 class="text-center">EQ Summary</h1>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Read</a></li>
-                        <li><a href="#about">Watch</a></li>
-                        <li><a href="#contact">Test</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
+            </div> 
+        </header>
 
         <!--Summary-->
-        <div id="summary">
+        <section id="summary">
             <div class="container">
-                <h1 class="text-center">EQ Summary</h1>
-                <p>Emotional intelligence (EQ) is the ability to monitor one's own and other people's emotions, to discriminate between different emotions and label them appropriately, and to use emotional information to guide thinking and behavior. There are three models of EI. The ability model, developed by Peter Salovey and John Mayer, focuses on the individual's ability to process emotional information and use it to navigate the social environment. The trait model as developed by Konstantin Vasily Petrides, "encompasses behavioral dispositions and self perceived abilities and is measured through self report". The final model, the mixed model is a combination of both ability and trait EI. It defines EI as an array of skills and characteristics that drive leadership performance, as proposed by Daniel Goleman.</p>
+                <div class="row">
+                    <p>Emotional intelligence (EQ) is the ability to monitor one's own and other people's emotions, to discriminate between different emotions and label them appropriately, and to use emotional information to guide thinking and behavior. There are three models of EI. The ability model, developed by Peter Salovey and John Mayer, focuses on the individual's ability to process emotional information and use it to navigate the social environment. The trait model as developed by Konstantin Vasily Petrides, "encompasses behavioral dispositions and self perceived abilities and is measured through self report". The final model, the mixed model is a combination of both ability and trait EI. It defines EI as an array of skills and characteristics that drive leadership performance, as proposed by Daniel Goleman.</p>
+                </div>
             </div>        
-        </div>
+        </section>
 
         <!--Benefits-->
-        <div id="benefits">
+        <section id="benefits">
             <div class="container">
                 <div class="row">
                     <h1 class="text-center">EQ Benefits</h1>
 
-                        <div class="col-sm-2 col-sm-offset-1">
-                            <img src="svg/magnifying2.svg" class="img-responsive center-block">
-                            <h3 class="text-center">Self-awareness</h3>
-                            <p>Recognize and understand moods, emotions, and drives, as well as your effect</p>
-                        </div> 
-                        <div class="col-sm-2">
-                            <img src="svg/businessman1.svg" class="img-responsive center-block">
-                            <h3 class="text-center">Self-regulation</h3>
-                            <p>Control or redirect disruptive impulses and moods</p>
-                        </div> 
-                        <div class="col-sm-2">
-                            <img src="svg/gears3.svg" class="img-responsive center-block">
-                            <h3 class="text-center">Motivation</h3>
-                            <p>Work for reasons that go beyond money or status</p>
-                        </div> 
+                    <div class="col-sm-2 col-sm-offset-1">
+                        <img src="svg/magnifying2.svg" class="img-responsive center-block">
+                        <h3 class="text-center">Self-awareness</h3>
+                    </div> 
+                    <div class="col-sm-2">
+                        <img src="svg/businessman1.svg" class="img-responsive center-block">
+                        <h3 class="text-center">Self-regulation</h3>
+                    </div> 
+                    <div class="col-sm-2">
+                        <img src="svg/gears3.svg" class="img-responsive center-block">
+                        <h3 class="text-center">Motivation</h3>
+                    </div> 
 
-                        <div class="col-sm-2">
-                            <img src="svg/heart258.svg" class="img-responsive center-block">
-                            <h3 class="text-center">Empathy</h3>
-                            <p>Understand the emotional makeup of other people</p>
-                        </div> 
-                        <div class="col-sm-2">
-                            <img src="svg/teamwork.svg" class="img-responsive center-block">
-                            <h3 class="text-center">Social Skill</h3>
-                            <p>Manage relationships and build networks</p>
-                        </div> 
+                    <div class="col-sm-2">
+                        <img src="svg/heart258.svg" class="img-responsive center-block">
+                        <h3 class="text-center">Empathy</h3>
+                    </div> 
+                    <div class="col-sm-2">
+                        <img src="svg/teamwork.svg" class="img-responsive center-block">
+                        <h3 class="text-center">Social Skill</h3>
+                    </div> 
 
                 </div>
             </div>        
-        </div>
+        </section>
 
-        <div id="learnMore">
-            <div id="read">
-                <img src="svg/open161.svg" class="center-block">
-                <h1 class="text-center">Read</h1>
+        <section id="learnMore">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li class="active"><a href="#read" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-book"></span> Read</a></li>
+                        <li><a href="#watch" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-play"></span> Watch</a></li>
+                        <li><a href="#test" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-pencil"></span> Test</a></li>
+                    </ul> 
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="read">
+                            <div class="col-sm-3">
+                                <div class="thumbnail image">
+                                    <div class="img-height">
+                                        <img src="http://ericdo.com/misc./reeftuner/hbr%20icon.jpg" alt="..." class="img-responsive center-block">
+                                    </div>
+                                    <div class="caption">
+                                        <h3>What Makes a Leader?</h3>
+                                        <p>by Daniel Goldman</p>
+                                        <p><a href="http://hbr.org/2004/01/what-makes-a-leader/ar/1" class="btn btn-primary" role="button">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                <div class="thumbnail image">
+                                    <div class="img-height">
+                                        <img src="http://upload.wikimedia.org/wikipedia/commons/7/77/The_New_York_Times_logo.png" alt="..." class="img-responsive center-block">
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Can Emotional Intelligence Be Taught?</h3>
+                                        <p>by Jennifer Khan</p>
+                                        <p><a href="http://www.nytimes.com/2013/09/15/magazine/can-emotional-intelligence-be-taught.html?pagewanted=all" class="btn btn-primary" role="button">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                <div class="thumbnail image">
+
+                                    <div class="img-height">
+                                        <img src="http://corporatevisions.com/wp-content/uploads/2014/03/Forbes-Logo.jpg" alt="..." class="img-responsive center-block">
+                                    </div>                            
+                                    <div class="caption">
+                                        <h3>5 Ways to Lead with Emotional Intelligence -- and Boost Productivity</h3>
+                                        <p>by Glenn Llopis</p>
+                                        <p><a href="http://www.forbes.com/sites/glennllopis/2012/09/24/5-ways-to-lead-with-emotional-intelligence-and-boost-productivity/" class="btn btn-primary" role="button">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                <div class="thumbnail image">
+                                    <div class="img-height">
+                                        <img src="http://logos-vector.com/images/logo/xxl/2/2/1/22110/Fast_Company_11507_450x450.png" alt="..." class="img-responsive center-block">
+                                    </div>                            
+                                    <div class="caption">
+                                        <h3>Emotional Intelligence Predicts Job Sucess: Do you have it?</h3>
+                                        <p>by Drake Baer</p>
+                                        <p><a href="http://www.fastcompany.com/3023335/leadership-now/emotional-intelligence-predicts-job-success-do-you-have-it" class="btn btn-primary" role="button">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="tab-pane" id="watch">
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <div class="videoWrapper">
+                                        <iframe width="560" height="400" src="http://www.youtube.com/embed/Y7m9eNoB3NU?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Daniel Goldman Introduces Emotional Intelligence</h3>
+                                        <p>by Daniel Goldman</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <div class="videoWrapper">
+                                        <iframe width="560" height="400" src="http://www.youtube.com/embed/NCJTV5KaJJc?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                    </div>                            
+                                    <div class="caption">
+                                        <h3>Let's try emotional correctness</h3>
+                                        <p>by Sally Kohn</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+
+                                    <div class="videoWrapper">
+                                        <iframe width="560" height="400" src="http://www.youtube.com/embed/l7AWnfFRc7g?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                    </div>                           
+                                    <div class="caption">
+                                        <h3>The Empathic Civilisation</h3>
+                                        <p>by Jeremy Rifkin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="test">
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <img src="http://www.maetrix.com.au/meit/eitest_files/logo_test.gif" alt="..." class="img-responsive center-block">
+                                    <div class="caption">
+                                        <h3>MEIT</h3>
+                                        <p>The mætrîx Emotional Intelligence Test - MEIT,  uses 40 questions which are derived from, the mætrîx EI Capability Assessment instrument, which contains 158 items. These are based on Goleman's four quadrant Emotional Intelligence Competency Model (2002). Click here for more details.  Short EI quizzes such as the MEIT are meant to be fun, and to give you a guide to which EI areas you are doing well in and those which perhaps you need to focus on for development.</p>
+                                        <p><a href="http://www.maetrix.com.au/meit/eitest.html" class="btn btn-primary" role="button">Take Test</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <img src="http://nhfaithfusion.com/wp-content/uploads/2014/04/ggsc_logo.jpg" alt="..." class="img-responsive center-block">
+                                    <div class="caption">
+                                        <h3>Body Language</h3>
+                                        <p>Facial expressions are a universal language of emotion, instantly conveying happiness, sadness, anger, fear, and much more. Reading these expressions is essential to compassion and empathy. Take this short quiz to measure your emotional intelligence. </p>
+                                        <p><a href="http://greatergood.berkeley.edu/ei_quiz/" class="btn btn-primary" role="button">Take Test</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <img src="http://rumifoundation.com/images/GLF.jpg" alt="..." class="img-responsive center-block">
+                                    <div class="caption">
+                                        <h3>GEIT</h3>
+                                        <p>The Global Emotional Intelligence Test - GEIT,  uses 40 questions which are derived from, the Global EI Capability Assessment instrument, which contains 158 items. These are based on Goleman's four quadrant Emotional Intelligence Competency Model (2002). Click here for more details.  Short EI quizzes such as the GEIT are meant to be fun, and to give you a guide to which EI areas you are doing well in and those which perhaps you need to focus on for development.</p>
+                                        <p><a href="https://www.globalleadershipfoundation.com/geit/eitest.html" class="btn btn-primary" role="button">Take Test</a></p>
+                                    </div>
+                                </div>
+                            </div>                
+
+                            <div class="col-sm-3">
+                                <div class="thumbnail">
+                                    <img src="http://www.ihhp.com/wp-content/themes/trego/images/sidebar-logo.png" alt="..." class="img-responsive center-block">
+                                    <div class="caption">
+                                        <h3>Emotional Intelligence Quiz</h3>
+                                        <p>Our emotional intelligence quiz describes situations and experiences that most of us are exposed to at some time in our lives (like being given difficult feedback). Be as honest as possible when answering the questions, as that will provide you with the most accurate assessment of your level of Emotional Intelligence. Once you have taken the emotional intelligence quiz, contact us to find out how we can help you improve your ability to manage your emotions and connect more skillfully with others when you are under pressure.</p>
+                                        <p><a href="http://www.ihhp.com/free-eq-quiz/" class="btn btn-primary" role="button">Take Test</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
             </div>
-            <div id="watch">
-                <img src="svg/film51.svg" class="center-block">
-                <h1 class="text-center">Watch</h1>
-            </div>
-            <div id="test">
-                <img src="svg/male172.svg" class="center-block">
-                <h1 class="text-center">Test</h1>
-            </div>
-        </div>
+        </section>
 
 
-        <div class="container">Icons made by Freepik, Icons8 from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>
+        <!--        <div class="container">Icons made by Freepik, Icons8 from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>-->
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
