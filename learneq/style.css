@@ -39,8 +39,12 @@ hr{
     margin-top: 20px;
 }
 
-.img-height{
-    :75px;
+.tab-content img{
+    padding:  10px 30px;
+}
+
+.tab-content h5{
+    font-style: italic;
 }
 
 .caption h3{
