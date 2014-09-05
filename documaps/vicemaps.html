@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <link rel="shortcut icon" href="http://s3.amazonaws.com/cuttings/backgrounds/24328/vice%20logo.gif">
+    <title>VICE Guide to Travel</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+      <style type="text/css">
+
+      #map-canvas {
+      height: 441px;
+      width: 320px;
+          }
+        body
+          {
+              background-color:black;
+          }
+    </style>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript"src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="swfobject.js"></script>    
+
+    <script type="text/javascript">
+      google.load('visualization', '1', { packages: ['table'] });
+      function drawTable() {
+        var query = "SELECT 'Title' as 'Country', " +
+            "'Hyperlink' as 'VICE Guides' " +
+            'FROM 1XUWC3X-wed60CVivnz_y5Halzu6GByUXScrttrU';
+        var region = document.getElementById('region').value;
+        if (region) {
+          query += " WHERE 'Region' = '" + region + "'";
+        }
+        var queryText = encodeURIComponent(query);
+        var gvizQuery = new google.visualization.Query(
+            'http://www.google.com/fusiontables/gvizdata?tq=' + queryText);
+
+        gvizQuery.send(function(response) {
+          var table = new google.visualization.Table(
+              document.getElementById('visualization'));
+          table.draw(response.getDataTable(), {
+            showRowNumber: true,
+            allowHtml: true,
+            page: 'enable',
+            pageSize: 5
+          });
+        });
+      }
+
+      google.setOnLoadCallback(drawTable);
+
+        var map, layer;
+        var infoWindow = new google.maps.InfoWindow();
+        var infoWindowOne = new google.maps.InfoWindow();
+        
+      function initialize() {
+        google.maps.visualRefresh = true;
+        var mapDiv = document.getElementById('map-canvas');
+        map = new google.maps.Map(mapDiv, {
+          center: new google.maps.LatLng(0,0),
+          zoom: 2,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        layer = new google.maps.FusionTablesLayer({
+          map: map,
+          suppressInfoWindows: true,
+          heatmap: { enabled: false },
+          query: {
+            select: "col2\x3e\x3e1",
+            from: "1XUWC3X-wed60CVivnz_y5Halzu6GByUXScrttrU",
+            where: ""
+          },
+          options: {
+            styleId: 2,
+            templateId: 2
+          },
+        });
+        google.maps.event.addListener(layer, 'click', function(e) {
+          windowControl(e, infoWindow, map);
+        });
+      }
+
+      function windowControl(e, infoWindow, map) {
+          infoWindowOne.close(map);
+          e.infoWindowHtml = '<div class="googft-info-window text-center" >'+
+                             '<b><u>'+e.row['Region'].value+': '+
+                             e.row['Country'].value+'</u></b>'+'<br/>'+
+                             e.row['Hyperlink'].value +
+                             '</div>';
+          infoWindow.setOptions({
+              content: e.infoWindowHtml,
+              position: e.latLng,
+              pixelOffset: e.pixelOffset
+            });
+          infoWindow.open(map);
+      }
+        
+      google.maps.event.addDomListener(window, 'load', initialize);
+    
+      function onYouTubePlayerReady(playerId) {
+        ytplayer = document.getElementById("myytplayer");
+        ytplayer.playVideo();
+      }
+
+    var globalinit = 0;
+
+    $(document).ready(function(){
+        $('body').on("click",".video1",function(){
+            var vid1 = $(this).attr("val");
+            if(globalinit == 0){
+              var params = { allowScriptAccess: "always" };
+              var atts = { id: "myytplayer" };
+              swfobject.embedSWF("http://www.youtube.com/v/"+vid1+"?enablejsapi=1&playerapiid=ytplayer&version=3","ytapiplayer", "100%", "300", "8", null, null, params, atts);
+              globalinit = 1;
+            } else {
+              ytplayer.loadVideoById(vid1,0,"large");
+            }
+          });
+
+        $('body').on("click",".window1",function(){
+            var country = $(this).attr("val");
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode( { 'address': country}, function(results, status) {        
+                if (status == google.maps.GeocoderStatus.OK) {
+                    coordinate = results[0].geometry.location;
+                    bounds = results[0].geometry.bounds;
+                    map.setCenter(coordinate);
+                    map.fitBounds(bounds);
+                    var query = "SELECT 'Country','Hyperlink','Region' " + 'FROM 1XUWC3X-wed60CVivnz_y5Halzu6GByUXScrttrU' + " WHERE 'Country' = '" + country + "'" ;
+                    var queryText = encodeURIComponent(query);
+                    var gvizQuery = new google.visualization.Query('http://www.google.com/fusiontables/gvizdata?tq=' + queryText);
+                    gvizQuery.send(function(response) {
+                        var datatable = response.getDataTable();
+                        var countryTitle, header, regionTitle;
+                        if (datatable && datatable.getNumberOfRows()) {
+                          countryTitle = datatable.getValue(0, 0);
+                          link = datatable.getValue(0, 1);
+                          regionTitle = datatable.getValue(0, 2);
+                        }
+                        infoWindow.close(map);                  
+                        infoWindowOne.setContent('<div class="text-center"><u><b>' +regionTitle +':'+ countryTitle+ '</b></u></br>' + link+'</div>');
+                        infoWindowOne.setPosition(coordinate);
+                        infoWindowOne.open(map);
+                    });
+                } else {
+                  alert('Error geocoding address');
+                }
+            });
+          });       
+        
+      $(window).resize(function(){
+        drawTable();
+      });
+      
+    });
+    
+  </script>
+      
+  </head>
+
+  <body>
+    <div class="container" style="background-color: black">
+      <div class="row" >
+        <div class="col-md-6" style="padding-top:12px; padding-bottom:12px">              
+            <img class="img-responsive img-thumbnail" style="width: 100%" src="http://tour-aroundtheworld.com/wp-content/uploads/2013/10/vice-guide-to-travel.jpg">
+          </div>
+        
+          <div class="col-md-6" style="padding-top:12px; padding-bottom:12px">
+                <div id="ytapiplayer">
+            <img class="img-responsive img-thumbnail" style="width: 100%" src="https://googledrive.com/host/0B8twAiT8iwUZcTJCUGVGZ3lCY2s/YoutubeVideoPlaceholder_v0.4.png">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" style="padding-top:12px; padding-bottom:12px">
+              <div id="map-canvas"></div>
+          </div>
+          <div class="col-md-6" style="padding-top:12px; padding-bottom:12px">
+             <label style="color: white">Region:</label>
+             <select id="region" onchange="drawTable();">
+                  <option value="">All</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Middle East">Middle East</option>                    
+                  <option value="North America">North America</option>
+                  <option value="Oceania">Oceania</option>
+                  <option value="South America">South America</option>
+             </select>                   
+           <div id="visualization"></div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
