@@ -10,33 +10,98 @@ header{
     padding: 30px;
 }
 
+header h1{
+    font-size: 48px;
+    color: yellow;
+}
+
 hr{
     margin: 0px;
 }
 
+#summary h1{
+    margin-top: 10px;
+    color: blue;
+}
+
 #summary h3{
-    margin: auto 80px;
+    color: green;
 }
 
 #benefits{
     padding: 20px;
 }
 
+#benefits h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: blue;
+}
+
 #benefits h3{
-    margin-top: 0px;
-    margin-bottom: 20px;
+    color: green;
+    fill: currentColor;
 }
 
 #benefits img{
     height: 50px;
+    fill: green;
 }
 
 #learnMore{
     margin: 20px;
 }
 
+#learnMore h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: blue;
+}
+
+
+
+.nav-tabs li a.tabhead{
+    border-radius: 0px;
+    background-color:green;
+    color:yellow;
+    font-size: 24px;
+}
+
+
+.nav-tabs li a.tabhead:hover{
+    border-radius: 0px;
+    background-color: yellow;
+    color:green;
+    font-size: 24px;
+}
+
+.nav-tabs li[class="active"] a{
+    background-color: yellow;
+    color:green;
+    border-radius: 0px;
+    font-size: 24px;
+}
+
+
+
+.nav-tabs li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 47%;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: yellow transparent;
+    display: block;
+    width: 0;
+}
+
 .tab-content{
     margin-top: 20px;
+    border: 1px solid green;
+    border-top: none;
+    padding-top: 30px;
+    margin-top: 0px;
 }
 
 .tab-content img{
@@ -47,8 +112,21 @@ hr{
     font-style: italic;
 }
 
+.tab-content p{
+    color:green;
+}
+
+.tab-content h5{
+    color:green;
+}
+
+.tab-content a.btn{
+    color:yellow;
+}
+
 .caption h3{
     margin-top: 10px;
+    color:green;
 }
 
 .videoWrapper {
