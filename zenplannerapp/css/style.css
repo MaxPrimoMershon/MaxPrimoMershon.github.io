@@ -1,0 +1,99 @@
+#summary{
+    background-size: cover;
+    background-image: url("../img/groupfitness.jpg");        
+}
+
+.layer {
+    background-color: rgba(214, 214, 214, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#summary #intro{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#summary img{
+    height:100px;
+}
+
+#summary #introstrengths{
+    margin-top: 60px;
+}
+
+#summary a.sections:hover .thumbnail{
+    background-color: rgb(153,41,46);
+}
+
+#strengths h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#strengths img{
+    height: 150px;
+    margin-top: 20px;
+}
+
+#strengths p{
+    margin-bottom: 20px;
+}
+
+#strengths img[src="img/bald32.png"]{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#values h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#values img{
+    height: 150px;
+}
+
+#team h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#fitness h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#team h3{
+    margin-top: 0px;
+}
+
+#fitness h3{
+    margin-top: 0px;
+}
+
+#fitness img{
+    margin-bottom: 20px;
+}
+
+#team img{
+    margin-bottom: 20px;
+}
+
+section{
+    padding-bottom: 30px;
+}
+
+#strengths, #team{
+    background-color: rgba(153,41,46, 0.6);
+}
+
+#values, #fitness{
+    background-color: rgba(214, 214, 214, 0.6); 
+}
