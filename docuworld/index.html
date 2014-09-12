@@ -13,6 +13,8 @@
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
         <!-- Custom styles for this template -->
         <!--        <style>body{padding-top:50px;}</style>-->
 
@@ -26,19 +28,20 @@
     <body>
         <section id="summary">
             <div class="layer">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-1">
-                            <h1>DocuWorld</h1>
-                            <h3>Explore, Discover & Experience the world watching documentaries about different corners of society</h3>
-                            <p>Sign up for updates by entering email below</p>
+                        <div class="col-md-6 col-md-offset-3">
+                            <img src="img/world90.png" class="img-responsive" id="logo"><h1>DocuWorld</h1>
+                            <h3>Become an aware citizen by watching, attending, and funding documetary films</h3>
 
                             <form role="form" class="form-inline">
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                                <button type="submit" class="btn btn-primary">Recieve Updates!</button>
                             </form>
+                            <br>
+                            <a class="btn btn-default" href="">Learn More</a>
 
                         </div>
                     </div>
@@ -46,51 +49,81 @@
             </div>
         </section>
 
-        <section id="features">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">DocuWorld</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-play"></i> Watch</a></li>
+                        <li><a href="#"><i class="fa fa-calendar"></i> Attend</a></li>
+                        <li><a href="#"><i class="fa fa-money"></i> Fund</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <section id="watch">
             <div class="container">
                 <div class="row">
-                    <h1 class="text-center">Features</h1>
-                    <div class="col-md-4">
-                        <img src="img/safari.svg" alt="compass" class="img-responsive center-block">
-                        <h3 class="text-center">Explore</h3>                        
+                    <h1 class="text-center"><i class="fa fa-play"></i> Watch</h1>
+                    <div class="col-md-6">
+                        <img src="http://placehold.it/450x250">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Videos</h3>                        
                         <p>Search for documentaries by location, length and channel</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/binoculars5.svg" alt="compass" class="img-responsive center-block">
-                        <h3 class="text-center">Discover</h3>
-                        <p>Filter through documentaries in map and list views</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/magnifier11.svg" alt="compass" class="img-responsive center-block">
-                        <h3 class="text-center">Experience</h3>
-                        <p>Watch documentaries and see what's happening in the world</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="mobileapp">
+
+        <section id="attend">
             <div class="container">
                 <div class="row">
-                    <h1 class="text-center">Mobile App</h1>
-                    <div class="col-md-4">
-                        <img src="img/docuworld_explore.png" alt="Explore App Screenshot" class="img-responsive center-block">
+                    <h1 class="text-center"><i class="fa fa-calendar"></i> Attend</h1>
+                    <div class="col-md-6">
+                        <img src="http://placehold.it/450x250">
                     </div>
-                    <div class="col-md-4">
-                        <img src="img/docuworld_discover.png" alt="Discover App Screenshot" class="img-responsive center-block">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/docuworld_experience.png" alt="Experience App Screenshot" class="img-responsive center-block">
+                    <div class="col-md-6">
+                        <h3>Events</h3>                        
+                        <p>Search for documentaries by location, length and channel</p>
                     </div>
                 </div>
             </div>
-        </section>      
+        </section>
+
+        <section id="fund">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center"><i class="fa fa-money"></i> Fund</h1>
+                    <div class="col-md-6">
+                        <img src="http://placehold.it/450x250">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Projects</h3>                        
+                        <p>Search for documentaries by location, length and channel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <div class="container">
                 <div class="row">
                     <p class="pull-right"><a href="#top">Back to top</a></p>
                     <p>&copy; 2014 DocuWorld</p>
+                    <div>Icons made by Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
                 </div>
             </div>
         </footer>

@@ -3,8 +3,19 @@
     background-image: url(https://googledrive.com/host/0B8twAiT8iwUZZUJQSUhIeGFkME0/);        
 }
 
+#logo{
+    height: 40px;
+    display: inline;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
+#summary h1{
+    display: inline;
+}
+
 .layer {
-    background-color: rgba(0, 250, 0, 0.8);
+    background-color: rgba(153,255,102, 0.8);
     top: 0;
     left: 0;
     width: 100%;
@@ -16,27 +27,23 @@
     margin-bottom: 20%;
 }
 
-
-#features h1{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.navbar.navbar-default{
+    margin-bottom: 0px;
 }
 
-#features img{
-    height: 150px;
+#watch{
+    background-color: #99CCFF;
+    padding-bottom: 30px;
 }
 
-#features p{
-    padding: 10px 45px;
+#attend{
+    background-color: #99FF66; 
+    padding-bottom: 30px;
 }
 
-#mobileapp{
-    background-color: #f8f8f8;
-}
-
-#mobileapp h1{
-    margin-top: 30px;
-    margin-bottom: 30px;
+#fund{
+    background-color: #99CCFF; 
+    padding-bottom: 30px;
 }
 
 footer{
