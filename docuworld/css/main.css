@@ -32,17 +32,30 @@
 }
 
 #watch{
-    background-color: #99CCFF;
+/*    background-color: #99CCFF;*/
     padding-bottom: 30px;
+}
+#watch h1{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+section a.btn-success{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+hr{
+    margin: 60px auto;
 }
 
 #attend{
-    background-color: #99FF66; 
+/*    background-color: #99FF66; */
     padding-bottom: 30px;
 }
 
 #fund{
-    background-color: #99CCFF; 
+/*    background-color: #99CCFF; */
     padding-bottom: 30px;
 }
 
