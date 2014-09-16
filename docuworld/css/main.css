@@ -51,6 +51,10 @@ section{
     margin-bottom: 60px;
 }
 
+#watch h3{
+    margin-bottom: 40px;
+}
+
 #mission{
     background-color: rgba(200,200,200, 0.85);
 }
