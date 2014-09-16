@@ -8,7 +8,7 @@
     display: inline;
     margin-top:  -10px;
     margin-right: 10px;
-    margin-left: 60px;
+    margin-left: 5%;
 }
 
 #logo-title{
@@ -36,7 +36,7 @@
 
 section h1{
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 section{
@@ -47,19 +47,34 @@ section{
     height: 200px;
 }
 
+#watch h1{
+    margin-bottom: 60px;
+}
 
 #mission{
     background-color: rgba(200,200,200, 0.85);
-}
-
-#signup h1{
-    margin-bottom: 30px;
 }
 
 #signup form{
     margin-top: 17px;
 }
 
+ input{
+     margin-bottom: 10px;
+ }
+
+#icons{
+    margin-top: 30px;
+}
+
+#icons img{
+    height: 40px;
+    display: inline;
+}
+
+#icons img:first-child{
+    margin-left: 45%;
+}
 
 footer{
     padding-top: 10px;
