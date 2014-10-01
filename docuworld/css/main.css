@@ -26,8 +26,12 @@
 }
 
 #summary .row{
-    margin-top: 10%;
-    margin-bottom: 20%;
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+#summary .row img{
+    width: 50px;
 }
 
 .navbar.navbar-default{
@@ -40,6 +44,18 @@
     margin-top: -5px;
     margin-right: 10px;
 }
+
+.btn-primary{
+    background-color: black;
+    border-color: black;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
 
 a.navbar-brand{
     margin-top: -5px;
@@ -66,17 +82,26 @@ section{
     margin-bottom: 40px;
 }
 
-#mission{
-    background-color: rgba(200,200,200, 0.85);
+#explore{
+        background-color: rgba(200,200,200, 0.85);
+
+}
+
+#explore a.btn{
+    width: 150px;
+}
+
+#signup{
+        background-color: rgba(200,200,200, 0.85);
 }
 
 #signup form{
     margin-top: 17px;
 }
 
- input{
-     margin-bottom: 10px;
- }
+input{
+    margin-bottom: 10px;
+}
 
 #icons{
     margin-top: 30px;
@@ -87,10 +112,6 @@ section{
     display: inline;
 }
 
-#icons img:first-child{
-    margin-left: 45%;
-}
-
 footer{
     padding-top: 10px;
 }
@@ -98,3 +119,56 @@ footer{
 #search{
     margin-top: 50px;
 }
+
+#map-canvas {
+    height: 500px;
+    width: 100%;
+}
+
+.nav-tabs li a.tabhead{
+    border-radius: 0px;
+    background-color: rgba(200,200,200, 0.85);
+    color:black;
+    font-size: 24px;
+}
+
+
+.nav-tabs li a.tabhead:hover{
+    border-radius: 0px;
+    background-color:black;
+    color:white;
+    font-size: 24px;
+}
+
+.nav-tabs li[class="active"] a{
+    background-color:black;
+    color:white;
+    border-radius: 0px;
+    font-size: 24px;
+}
+
+
+
+.nav-tabs li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 47%;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: black transparent;
+    display: block;
+    width: 0;
+}
+
+.tab-content{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-top: none;
+    padding-top: 30px;
+    margin-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
