@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://tutsme-webdesign.info/tutorials/filterable/recipes_filterable_v2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Bootstrap 3 Portfolio Filtrable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.css" rel="stylesheet" media="screen">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+<![endif]-->
+    <style>
+        body {background: #34495E;}
+        ul {margin-top: 20px; list-style-type:none;}
+        ul.filter li {float:left; margin-left: 17px;}
+        ul.filter li a {outline: 2px solid #E74C3C; color: #E74C3C; padding: 5px;}
+        ul.filter li a:hover, ul.filter li a:focus {text-decoration: none; background-color: #ECF0F1;}
+        ul.thumbnails li {margin: 20px 10px; width: 246px; float: left;}
+        ul.thumbnails li a {color: #E74C3C;}
+        ul.thumbnails li a:hover {text-decoration: none; background-color: #ECF0F1; color: #EC8783;}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- Filter for items -->
+                <ul class="filter">
+                    <li class="active" data-value="all"><a href="http://tutsme-webdesign.info/tutorials/filterable/recipes_filterable_v2.html#">All</a></li>
+                    <li data-value="antipasto"><a href="http://tutsme-webdesign.info/tutorials/filterable/recipes_filterable_v2.html#">Antipasto</a></li>
+                    <li data-value="main"><a href="http://tutsme-webdesign.info/tutorials/filterable/recipes_filterable_v2.html#">Main course</a></li>
+                    <li data-value="desert"><a href="http://tutsme-webdesign.info/tutorials/filterable/recipes_filterable_v2.html#">Desert</a></li>
+                </ul>
+            </div> <!-- End of first row -->
+            <div class="row">
+                <!-- Portfolio items -->
+                <ul class="thumbnails recipes" style="height: 1542px; width: 1170px;">
+                    <li data-type="desert" data-id="id-1">
+
+                                    <li class="col-md-4">
+                <div class="thumbnail">
+                    <img data-src="holder.js/300x300" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                    </div>
+                </div>
+            </li>
+                        
+                    </li><li data-type="antipasto" data-id="id-2">
+                    <a href="http://funkystock.photoshelter.com/gallery-image/Italian-Food-Pictures-Photos-Italian-Food-Fotos-Images-Photography/G0000z0D0kW75fa4/I0000OQpllAGgzZk/C0000Jg2uRGSZBFg" class="thumbnail" id="A-1">
+                        <img src="./Bootstrap 3 Portfolio Filtrable_files/Bruschetta.jpg" width="375" height="500" alt="Bruschetta">
+                        <h4>Bruschetta</h4>
+                        <p>Sesame snaps cookie ice cream. Powder bear claw gingerbread jelly-o powder. Dessert bonbon powder chocolate cake halvah jujubes bonbon chocolate bar chocolate bar.</p>
+                    </a>
+                    </li><li data-type="desert" data-id="id-3">
+                    <a href="http://funkystock.photoshelter.com/gallery-image/Cakes-Pastries-Cakes-Food-Pictures-Photos-Images-Fotos/G0000xGhT69tiwEY/I0000oI2GhjQ1mLI/C0000KBsxVLzXX3M" class="thumbnail" id="B-2">
+                        <img src="./Bootstrap 3 Portfolio Filtrable_files/Cake 2.jpg" width="375" height="500" alt="Cake 2">
+                        <h4>Mixed Fruit Tartelette</h4>
+                        <p>Croissant liquorice lemon drops sweet roll gummi bears dessert marzipan unerdwear.com. Toffee chupa chups danish cotton candy bear claw. Tootsie roll macaroon.</p>
+                    </a>
+                    </li><li data-type="main" data-id="id-4">
+                    <a href="http://funkystock.photoshelter.com/gallery-image/Italian-Food-Pictures-Photos-Italian-Food-Fotos-Images-Photography/G0000z0D0kW75fa4/I0000jnDgFD8vx38/C0000Jg2uRGSZBFg" class="thumbnail" id="D-1">
+                        <img src="./Bootstrap 3 Portfolio Filtrable_files/Bolognese.jpg" width="375" height="500" alt="Bolognese">
+                        <h4>Bolognese</h4>
+                        <p>Sesame snaps cookie ice cream. Powder bear claw gingerbread jelly-o powder. Dessert bonbon powder chocolate cake halvah jujubes bonbon chocolate bar chocolate bar.</p>
+                    </a>
+                    </li><li data-type="desert" data-id="id-5">
+                    <a href="http://funkystock.photoshelter.com/gallery-image/Cakes-Pastries-Cakes-Food-Pictures-Photos-Images-Fotos/G0000xGhT69tiwEY/I0000IctVb18MchM/C0000KBsxVLzXX3M" class="thumbnail" id="A-3">
+                        <img src="./Bootstrap 3 Portfolio Filtrable_files/Cake 3.jpg" width="375" height="500" alt="Cake 3">
+                        <h4>Chocolate Cake</h4>
+                        <p>Croissant liquorice lemon drops sweet roll gummi bears dessert marzipan unerdwear.com. Toffee chupa chups danish cotton candy bear claw. Tootsie roll macaroon.</p>
+                    </a>
+                    </li><li data-type="main" data-id="id-6">
+                    <a href="http://funkystock.photoshelter.com/gallery-image/Pizzas-Pizza-Pictures-Photos-Images-Fotos/G0000WVCoD5Z5yAE/I0000SHV5zxh02kE/C0000qD9AwD.AHiE" class="thumbnail" id="C-2">
+                        <img src="./Bootstrap 3 Portfolio Filtrable_files/Pizza.jpg" width="375" height="500" alt="Pizza">
+                        <h4>Pizza</h4>
+                        <p>Sesame snaps cookie ice cream. Powder bear claw gingerbread jelly-o powder. Dessert bonbon powder chocolate cake halvah jujubes bonbon chocolate bar chocolate bar.</p>
+                    </a>
+                    </li><li data-type="desert" data-id="id-7">
+                    <a href="http://funkystock.photoshelter.com/gallery-image/Cakes-Pastries-Cakes-Food-Pictures-Photos-Images-Fotos/G0000xGhT69tiwEY/I0000Zw.DW7zEdIc/C0000KBsxVLzXX3M" class="thumbnail" id="B-2">
+                        <img src="./Bootstrap 3 Portfolio Filtrable_files/Cake 4.jpg" width="375" height="500" alt="Cake 4">
+                        <h4>Raspberries Cake</h4>
+                        <p>Croissant liquorice lemon drops sweet roll gummi bears dessert marzipan unerdwear.com. Toffee chupa chups danish cotton candy bear claw. Tootsie roll macaroon.</p>
+                    </a>
+                    </li>
+
+
+
+
+
+
+
+                </ul>
+            </div> <!-- End of seond row -->
+        </div> <!-- End of container -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="./Bootstrap 3 Portfolio Filtrable_files/jquery.min.js"></script>
+        <script src="./Bootstrap 3 Portfolio Filtrable_files/jquery-migrate-1.2.1.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="./Bootstrap 3 Portfolio Filtrable_files/bootstrap.min.js"></script>
+        <script src="./Bootstrap 3 Portfolio Filtrable_files/jquery.quicksand.js"></script>
+        <script>
+            var $itemsHolder = $('ul.recipes');
+            var $itemsClone = $itemsHolder.clone(); 
+            var $filterClass = "";
+            $('ul.filter li').click(function(e) {
+                e.preventDefault();
+                $filterClass = $(this).attr('data-value');
+                if($filterClass == 'all'){ var $filters = $itemsClone.find('li'); }
+                else { var $filters = $itemsClone.find('li[data-type='+ $filterClass +']'); }
+                $itemsHolder.quicksand(
+                    $filters
+                );
+            });
+        </script>
+
+
+    </body></html>
