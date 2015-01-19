@@ -1,182 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Support Page Ideas - Options - Searchable Thumbnails</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support</title>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-        <style>
-            button{
-                margin-top: 30px;
-                margin-right: 20px;
-            }
-        </style>
-
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
     </head>
     <body>
-        <div class="container">
 
-            <div class="row">
-                <h1 class="pull-left">Support</h1>
-                <button type="button" class="btn btn-primary pull-right">Share Screen via Glance</button>
-                <button type="button" class="btn btn-primary pull-right">Submit a Support Request</button>
-            </div>
-            <hr>
-            <div class="row">
-                <h3>AIM User Training</h3>
+      <div class="container">
+        <h1>Support</h1>
+        
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">All</a></li>
+              <li role="presentation"><a href="#">The Basics</a></li>
+              <li role="presentation"><a href="#">Administrative</a></li>
+              <li role="presentation"><a href="#">Accounts, Contacts, Interactions, Connections</a></li>
+              <li role="presentation"><a href="#">Reporting</a></li>
+              <li role="presentation"><a href="#">Investing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <form class="form-inline">
+              <input type="text" class="form-control" id="search-criteria"/>
+              <input type="button" class="btn btn-primary" id="search" value="search">
+            </form>
+          </div>
+          
+        </div>
+
+        <br>
+
+        <div class="row" id="portfolio">
+
+          <div class="col-sm-6 col-md-4 investing item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Add a Deal</h3>
+                <span class="label label-info">Investing</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
                 <br>
-                <div class="col-md-12">
-                    <ul class="nav nav-pills">
-                        <li role="presentation" class="active"><a href="#">All</a></li>
-                        <li role="presentation"><a href="#">The Basics</a></li>
-                        <li role="presentation"><a href="#">Accounts, Contacts, Interactions, Connections</a></li>
-                        <li role="presentation"><a href="#">Administrative</a></li>
-                        <li role="presentation"><a href="#">Capital Raising</a></li>
-                        <li role="presentation"><a href="#">Investing</a></li>
-                        <li role="presentation"><a href="#">Reporting</a></li>
-                    </ul>
-                </div>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Add%20a%20Deal.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-sm-6 col-md-4 administrative item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Change User Information</h3>
+                <span class="label label-primary">Administrative</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Change%20User%20Information.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Add a New Connection Type</h3>
-                            <span class="label label-default">The Basics</span>
-                            <br><br>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
-                            </div>
-                            <br>
-                            <p>Learn how to add a new connection type.</p>
-                            <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
-                        </div>
-                    </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 administrative item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Create a New Field</h3>
+                <span class="label label-primary">Administrative</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Add a New Connection Type</h3>
-                            <span class="label label-default">The Basics</span>
-                            <br><br>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
-                            </div>
-                            <br>
-                            <p>Learn how to add a new connection type.</p>
-                            <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Add a New Connection Type</h3>
-                            <span class="label label-default">The Basics</span>
-                            <br><br>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
-                            </div>
-                            <br>
-                            <p>Learn how to add a new connection type.</p>
-                            <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Add a New Connection Type</h3>
-                            <span class="label label-default">The Basics</span>
-                            <br><br>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
-                            </div>
-                            <br>
-                            <p>Learn how to add a new connection type.</p>
-                            <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Add a New Connection Type</h3>
-                            <span class="label label-default">The Basics</span>
-                            <br><br>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
-                            </div>
-                            <br>
-                            <p>Learn how to add a new connection type.</p>
-                            <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>Add a New Connection Type</h3>
-                            <span class="label label-default">The Basics</span>
-                            <br><br>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
-                            </div>
-                            <br>
-                            <p>Learn how to add a new connection type.</p>
-                            <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Create%20a%20New%20Field.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <nav>
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+          </div>
+
+          <div class="col-sm-6 col-md-4 accounts-contacts-interactions-connections item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Create an Interaction</h3>
+                <span class="label label-success">Accounts, Contacts, Interactions, Connections</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
                 </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Create%20an%20Interaction.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
             </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Create and Edit a List View</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/j9bNGdT3fxQ"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Create%20and%20Edit%20a%20List%20View.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Customize Search Layout</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Customize%20Search%20Layout.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Customize Tabs</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Customize%20Tabs.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>       
+
+          <div class="col-sm-6 col-md-4 administrative item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Edit Page Layout</h3>
+                <span class="label label-primary">Administrative</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Edit%20Page%20Layout.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Global Search</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Global%20Search.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Mass Custom Email: Part 1 - Create Letterhead</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/mhAGplqqv3M"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Mass%20Custom%20Email%20-%20Part%201%20-%20Create%20Letterhead.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Mass Custom Email: Part 2 - Create HTML Email Template</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/Lzw28SAqieA"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Mass%20Custom%20Email%20-%20Part%202%20-%20Create%20HTML%20Email%20Template.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Mass Custom Email: Part 3 - Send Email</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Mass%20Custom%20Email%20-%20Part%203%20-%20Send%20Email.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Mass Edit from List View</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Mass%20Edit%20from%20List%20View.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 accounts-contacts-interactions-connections item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Merge Accounts</h3>
+                <span class="label label-success">Accounts, Contacts, Interactions, Connections</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Merge%20Accounts.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 accounts-contacts-interactions-connections item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Merge Contacts</h3>
+                <span class="label label-success">Accounts, Contacts, Interactions, Connections</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/d_I7P-GqIys"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Merge%20Contacts.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 accounts-contacts-interactions-connections item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Move Contacts</h3>
+                <span class="label label-success">Accounts, Contacts, Interactions, Connections</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Move%20Contacts.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 administrative item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Password Reset</h3>
+                <span class="label label-primary">Administrative</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Password%20Reset.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 reporting item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Reporting Part 1 - Reports and Charts</h3>
+                <span class="label label-warning">Reporting</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Reporting%20Part%201%20-%20Reports%20and%20Charts.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 reporting item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Reporting Part 2 - Dashboards</h3>
+                <span class="label label-warning">Reporting</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Reporting%20Part%202%20-%20Dashboards.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 administrative item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Schedule Report to be Emailed</h3>
+                <span class="label label-primary">Administrative</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/V5ykKn106C4"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Schedule%20a%20Report%20to%20be%20Emailed.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 accounts-contacts-interactions-connections item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Send Notification after Creating an Interaction</h3>
+                <span class="label label-success">Accounts, Contacts, Interactions, Connections</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Send%20Notification%20after%20Creating%20an%20Interaction.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 administrative item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Update Picklist Values</h3>
+                <span class="label label-primary">Administrative</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+                <br>
+                <p><a href="http://www.app-x.com/library/resources/Manuals/Update%20Picklist%20Values.pdf" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> View Guide (.pdf)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 the-basics item">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Intro to Chatter</h3>
+                <span class="label label-default">The Basics</span>
+                <br><br>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/CGlLUBNEF9g"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    </body>
+      </div>
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+      <script>
+        $(document).ready(function() {
+          $('ul.nav-pills a').click(function() {
+            $('ul.nav-pills .active').removeClass('active');
+            $(this).parent().addClass('active');
+
+            var filterVal = $(this).text().toLowerCase().replace(',','').replace(' ','-').replace(',','').replace(' ','-').replace(',','').replace(' ','-');
+
+            if(filterVal == 'all') {
+              $('div#portfolio div.hidden').fadeIn('slow').removeClass('hidden');
+            } else {
+              $('div#portfolio div.item').each(function() {
+                if(!$(this).hasClass(filterVal)) {
+                  $(this).fadeOut('normal').addClass('hidden');
+                } else {
+                  $(this).fadeIn('slow').removeClass('hidden');
+                }
+              });
+            }
+
+            return false;
+          });
+
+          $("#search-criteria").on("keyup", function() {
+            var g = $(this).val().toLowerCase();
+            $(".item h3").each(function() {
+              var s = $(this).text().toLowerCase();
+              $(this).closest('.item')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+            });
+          });
+
+        });
+</script>
+</body>
 </html>
