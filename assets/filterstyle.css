@@ -1,5 +1,5 @@
-.container{
-  padding-top: -120px;
+#top-bar + p{
+  height:0px;
 }
 
 .nav-pills li.active a{
