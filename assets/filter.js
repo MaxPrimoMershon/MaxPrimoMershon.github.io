@@ -5,7 +5,7 @@
 				var number_of_items = $('#portfolio').children('.item').size();
 				var number_of_pages = Math.ceil(number_of_items / show_per_page);
 
-				$('body').append('<div class=controls></div><input id=current_page type=hidden><input id=show_per_page type=hidden>');
+				$('body').append('<div class="controls"></div><input id="current_page" type="hidden"><input id="show_per_page" type="hidden">');
 				$('#current_page').val(0);
 				$('#show_per_page').val(show_per_page);
 
