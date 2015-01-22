@@ -1,42 +1,10 @@
         $(document).ready(function() {
-          $('ul.nav-pills a').click(function() {
-            $('ul.nav-pills .active').removeClass('active');
-            $(this).parent().addClass('active');
-
-            var filterVal = $(this).text().toLowerCase().replace(',','').replace(' ','-').replace(',','').replace(' ','-').replace(',','').replace(' ','-');
-
-            if(filterVal == 'all') {
-              $('div#portfolio div.hidden').fadeIn('slow').removeClass('hidden');
-            } else {
-              $('div#portfolio div.item').each(function() {
-                if(!$(this).hasClass(filterVal)) {
-                  $(this).fadeOut('normal').addClass('hidden');
-                } else {
-                  $(this).fadeIn('slow').removeClass('hidden');
-                }
-              });
-            }
-
-            return false;
-          });
-
-          $("#search-criteria").on("keyup", function() {
-            var g = $(this).val().toLowerCase();
-            $(".item h3").each(function() {
-              var s = $(this).text().toLowerCase();
-              $(this).closest('.item')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
-            });
-          });
-
-        });
-
-			$(document).ready(function() {
 
 			    var show_per_page = 2;
 			    var number_of_items = $('#portfolio').children('.item').size();
 			    var number_of_pages = Math.ceil(number_of_items / show_per_page);
 
-			    $('body').append('<div class=controls></div><input id=current_page type=hidden><input id=show_per_page type=hidden>');
+			    $('body').append('<div class="controls"></div><input id="current_page" type="hidden"><input id="show_per_page" type="hidden">');
 			    $('#current_page').val(0);
 			    $('#show_per_page').val(show_per_page);
 
@@ -92,3 +60,35 @@
 			    }
 
 			}
+
+        $(document).ready(function() {
+          $('ul.nav-pills a').click(function() {
+            $('ul.nav-pills .active').removeClass('active');
+            $(this).parent().addClass('active');
+
+            var filterVal = $(this).text().toLowerCase().replace(',','').replace(' ','-').replace(',','').replace(' ','-').replace(',','').replace(' ','-');
+
+            if(filterVal == 'all') {
+              $('div#portfolio div.hidden').fadeIn('slow').removeClass('hidden');
+            } else {
+              $('div#portfolio div.item').each(function() {
+                if(!$(this).hasClass(filterVal)) {
+                  $(this).fadeOut('normal').addClass('hidden');
+                } else {
+                  $(this).fadeIn('slow').removeClass('hidden');
+                }
+              });
+            }
+
+            return false;
+          });
+
+          $("#search-criteria").on("keyup", function() {
+            var g = $(this).val().toLowerCase();
+            $(".item h3").each(function() {
+              var s = $(this).text().toLowerCase();
+              $(this).closest('.item')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+            });
+          });
+
+        });
