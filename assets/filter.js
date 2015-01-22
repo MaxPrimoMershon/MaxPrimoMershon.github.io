@@ -30,7 +30,7 @@
 
         });
 
-$(document).ready(function() {
+			$(document).ready(function() {
 
 			    var show_per_page = 2;
 			    var number_of_items = $('#portfolio').children('.item').size();
@@ -49,7 +49,7 @@ $(document).ready(function() {
 			    navigation_html += '<a class="next" onclick="next()">Next</a>';
 
 			    $('.controls').html(navigation_html);
-			    $('.controls .page:first').addClass('active');
+			    $('.controls .page:first').addClass('activePage');
 
 			    $('#portfolio').children().css('display', 'none');
 			    $('#portfolio').children().slice(0, show_per_page).css('display', 'block');
@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 			    $('#portfolio').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
 
-			    $('.page[longdesc=' + page_num + ']').addClass('active').siblings('.active').removeClass('active');
+			    $('.page[longdesc=' + page_num + ']').addClass('activePage').siblings('.activePage').removeClass('activePage');
 
 			    $('#current_page').val(page_num);
 			}
@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 			    new_page = parseInt($('#current_page').val(), 0) - 1;
 			    //if there is an item before the current active link run the function
-			    if ($('.active').prev('.page').length == true) {
+			    if ($('.activePage').prev('.page').length == true) {
 			        go_to_page(new_page);
 			    }
 
@@ -87,7 +87,7 @@ $(document).ready(function() {
 			function next() {
 			    new_page = parseInt($('#current_page').val(), 0) + 1;
 			    //if there is an item after the current active link run the function
-			    if ($('.active').next('.page').length == true) {
+			    if ($('.activePage').next('.page').length == true) {
 			        go_to_page(new_page);
 			    }
 
