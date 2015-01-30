@@ -12,13 +12,11 @@ input.btn:focus {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-body{margin:0px;padding:0px;}
   </style>
   <body>
 
-
+<div class="container">
       
-
             <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validation(this);">          
                 <input type=hidden name="oid" value="00D500000007TGf">
                 <input type=hidden name="lead_source" value="Blog Subscription">
@@ -31,7 +29,7 @@ body{margin:0px;padding:0px;}
                   </span>
                 </div>
             </form>
-
+</div>
             <script language="JavaScript" type="text/javascript">
               function validation ( form ) {
                 if(form.email.value == '') {
