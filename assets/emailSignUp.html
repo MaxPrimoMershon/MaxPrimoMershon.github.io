@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- <div align="center"> -->
+      <!-- <div style="width:560px;height:60px;"> -->
+        
+<div class="container">
+  
+  <div class="row">
+  
+    <div class="col-md-12">
+
+        <form class="form-inline" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validation(this);">
+          
+            <input type=hidden name="oid" value="00D500000007TGf">
+            <input type=hidden name="lead_source" value="Blog Subscription">
+            <input type=hidden name="retURL" value="http://app-x.com/library/resources/blogthankyou.html"><br />
+            
+
+            <div class="form-group">
+<!--               <label for="exampleInputEmail2">Email</label>
+ -->
+              <!-- <label for="email"><font size="2" style="font-family:verdana;">Enter your email to subscribe to the App-X Blog </font></label> -->
+
+              <input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" placeholder="Email" />
+
+            </div>
+            
+              <input type="submit" name="submit" value="Sign Up" class="btn btn-default">
+
+        </form>
+
+        <script language="JavaScript" type="text/javascript">
+          function checkform ( form ) {
+            if(form.email.value == '') {
+              alert('Please enter your email address');
+              form.email.focus();
+              return false;
+            }
+            return true;
+          }
+        </script>
+
+    </div>
+
+  </div>
+
+</div>
+
+      <!-- </div> -->
+    <!-- </div> -->
+
+  </body>
+</html>
