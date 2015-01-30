@@ -17,54 +17,38 @@
   </head>
   <body>
 
-    <!-- <div align="center"> -->
-      <!-- <div style="width:560px;height:60px;"> -->
-        
-<div class="container">
-  
-  <div class="row">
-  
-    <div class="col-md-12">
+    <div class="container">
+      
+      <div class="row">
+      
+        <div class="col-md-12">
 
-        <form class="form-inline" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validation(this);">
-          
-            <input type=hidden name="oid" value="00D500000007TGf">
-            <input type=hidden name="lead_source" value="Blog Subscription">
-            <input type=hidden name="retURL" value="http://app-x.com/library/resources/blogthankyou.html"><br />
-            
+            <form class="form-inline" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validation(this);">          
+                <input type=hidden name="oid" value="00D500000007TGf">
+                <input type=hidden name="lead_source" value="Blog Subscription">
+                <input type=hidden name="retURL" value="http://app-x.com/library/resources/blogthankyou.html"><br />            
+                <div class="form-group">
+                  <input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" placeholder="Email" />
+                </div>            
+                  <input type="submit" name="submit" value="Sign Up" class="btn btn-default">
+            </form>
 
-            <div class="form-group">
-<!--               <label for="exampleInputEmail2">Email</label>
- -->
-              <!-- <label for="email"><font size="2" style="font-family:verdana;">Enter your email to subscribe to the App-X Blog </font></label> -->
+            <script language="JavaScript" type="text/javascript">
+              function checkform ( form ) {
+                if(form.email.value == '') {
+                  alert('Please enter your email address');
+                  form.email.focus();
+                  return false;
+                }
+                return true;
+              }
+            </script>
 
-              <input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" placeholder="Email" />
+        </div>
 
-            </div>
-            
-              <input type="submit" name="submit" value="Sign Up" class="btn btn-default">
-
-        </form>
-
-        <script language="JavaScript" type="text/javascript">
-          function checkform ( form ) {
-            if(form.email.value == '') {
-              alert('Please enter your email address');
-              form.email.focus();
-              return false;
-            }
-            return true;
-          }
-        </script>
+      </div>
 
     </div>
-
-  </div>
-
-</div>
-
-      <!-- </div> -->
-    <!-- </div> -->
 
   </body>
 </html>
