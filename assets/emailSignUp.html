@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   </head>
+  <style>
+  input.btn,
+input.btn:focus {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  </style>
   <body>
 
     <div class="container">
@@ -13,14 +22,12 @@
       <div class="row">
       
 
-            <form class="form-inline" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validation(this);">          
+            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validation(this);">          
                 <input type=hidden name="oid" value="00D500000007TGf">
                 <input type=hidden name="lead_source" value="Blog Subscription">
                 <input type=hidden name="retURL" value="http://maxprimomershon.com/assets/blogSignUpSuccess.html"><br />            
-                <div class="col-xs-8" style="margin-left:0px;padding:0px">
+                <div class="input-group">
                   <input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" placeholder="Email" />
-                </div>
-                <div class="col-xs-4" style="margin-left:0px;padding-left:5px;padding-right:30px">
                   <input type="submit" name="submit" value="Sign Up" class="btn btn-success">
                 </div>
             </form>
