@@ -31,6 +31,8 @@ $(document).ready(function() {
 		});
 	});
 
+	
+});
 	function validateSupportForm ( form ) {
 		if(form.email.value == '') {
 		  alert('Please enter your email address');
@@ -39,7 +41,4 @@ $(document).ready(function() {
 		}
 		return true;
 	}
-	
-});
-
 
