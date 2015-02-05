@@ -31,13 +31,15 @@ $(document).ready(function() {
 		});
 	});
 
+	function validateSupportForm ( form ) {
+		if(form.email.value == '') {
+		  alert('Please enter your email address');
+		  form.email.focus();
+		  return false;
+		}
+		return true;
+	}
+	
 });
 
-function validateSupportForm ( form ) {
-	if(form.email.value == '') {
-	  alert('Please enter your email address');
-	  form.email.focus();
-	  return false;
-	}
-	return true;
-}
+
