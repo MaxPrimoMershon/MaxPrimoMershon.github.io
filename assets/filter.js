@@ -58,7 +58,8 @@ $(document).ready(function() {
 		  alert('Please enter a Description');
 		  form.description.focus();
 		  return false;
-		}
+		}else{
 		return true;
+		}
 	}
 
