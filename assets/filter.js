@@ -33,33 +33,33 @@ $(document).ready(function() {
 
 	
 });
-	function validateSupportForm ( form ) {
-		if(form.name.value == '') {
-		  alert('Please enter your Name');
-		  form.name.focus();
-		  return false;
-		}else if(form.email.value == '') {
-		  alert('Please enter your Email');
-		  form.email.focus();
-		  return false;
-		}else if(form.company.value == '') {
-		  alert('Please enter your Company');
-		  form.commpany.focus();
-		  return false;
-		}else if(form.priority.value == '') {
-		  alert('Please enter a Priority');
-		  form.priority.focus();
-		  return false;
-		}else if(form.subject.value == '') {
-		  alert('Please enter a Subject');
-		  form.subject.focus();
-		  return false;
-		}else if(form.description.value == '') {
-		  alert('Please enter a Description');
-		  form.description.focus();
-		  return false;
-		}else{
-		return true;
-		}
-	}
 
+function validateSupportForm ( form ) {
+	if(form.name.value == '') {
+	  alert('Please enter your Name');
+	  form.name.focus();
+	  return false;
+	}else if(form.email.value == '') {
+	  alert('Please enter your Email');
+	  form.email.focus();
+	  return false;
+	}else if(form.company.value == '') {
+	  alert('Please enter your Company');
+	  form.commpany.focus();
+	  return false;
+	}else if(form.priority.value == '') {
+	  alert('Please enter a Priority');
+	  form.priority.focus();
+	  return false;
+	}else if(form.subject.value == '') {
+	  alert('Please enter a Subject');
+	  form.subject.focus();
+	  return false;
+	}else if(form.description.value == '') {
+	  alert('Please enter a Description');
+	  form.description.focus();
+	  return false;
+	}else{
+	return true;
+	}
+}
