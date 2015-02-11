@@ -25,9 +25,9 @@ $(document).ready(function() {
 	//Search
 	$("#search-criteria").on("keyup", function() {
 		var g = $(this).val().toLowerCase();
-		$(".item h3").each(function() {
+		$(".caption").each(function() {
 			var s = $(this).text().toLowerCase();
-			$(this).closest('.item')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+			$(this).closest('.caption')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
 		});
 	});
 
