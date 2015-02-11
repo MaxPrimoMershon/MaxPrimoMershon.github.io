@@ -27,7 +27,7 @@ $(document).ready(function() {
 		var g = $(this).val().toLowerCase();
 		$(".caption").each(function() {
 			var s = $(this).text().toLowerCase();
-			$(this).closest('.caption')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+			$(this).closest('.item')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
 		});
 	});
 
